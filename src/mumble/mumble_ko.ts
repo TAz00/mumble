@@ -173,7 +173,7 @@ This value enables you to change the way mumble arranges the channels in the tre
     </message>
     <message>
         <source>This sets whether or not the ACL up the chain of parent channels are applied to this object. Only those entries that are marked in the parent as &quot;Apply to sub-channels&quot; will be inherited.</source>
-        <translation type="unfinished">상위 채널 체인의 ACL을 이 개체에 적용할지 여부를 설정합니다. 상위 항목에 &quot;하위 채널에 적용&quot;으로 표시된 항목만 상속됩니다.</translation>
+        <translation type="unfinished">상위 채널 체인의 ACL을 이 객체에 적용할지 여부를 설정합니다. 상위 항목에 &quot;하위 채널에 적용&quot;으로 표시된 항목만 상속됩니다.</translation>
     </message>
     <message>
         <source>Inherit ACLs</source>
@@ -378,7 +378,7 @@ Contains the list of members inherited by the current channel. Uncheck &lt;i&gt;
     </message>
     <message>
         <source>This controls which group of users this entry applies to.&lt;br /&gt;Note that the group is evaluated in the context of the channel the entry is used in. For example, the default ACL on the Root channel gives &lt;i&gt;Write&lt;/i&gt; permission to the &lt;i&gt;admin&lt;/i&gt; group. This entry, if inherited by a channel, will give a user write privileges if he belongs to the &lt;i&gt;admin&lt;/i&gt; group in that channel, even if he doesn&apos;t belong to the &lt;i&gt;admin&lt;/i&gt; group in the channel where the ACL originated.&lt;br /&gt;If a group name starts with &apos;!&apos;, its membership is negated, and if it starts with &apos;~&apos;, it is evaluated in the channel the ACL was defined in, rather than the channel the ACL is active in.&lt;br /&gt;If a group name starts with &apos;#&apos;, it is interpreted as an access token. Users must have entered whatever follows the &apos;#&apos; in their list of access tokens to match. This can be used for very simple password access to channels for non-authenticated users.&lt;br /&gt;If a group name starts with &apos;$&apos;, it will only match users whose certificate hash matches what follows the &apos;$&apos;.&lt;br /&gt;A few special predefined groups are:&lt;br /&gt;&lt;b&gt;all&lt;/b&gt; - Everyone will match.&lt;br /&gt;&lt;b&gt;auth&lt;/b&gt; - All authenticated users will match.&lt;br /&gt;&lt;b&gt;sub,a,b,c&lt;/b&gt; - User currently in a sub-channel minimum &lt;i&gt;a&lt;/i&gt; common parents, and between &lt;i&gt;b&lt;/i&gt; and &lt;i&gt;c&lt;/i&gt; channels down the chain. See the website for more extensive documentation on this one.&lt;br /&gt;&lt;b&gt;in&lt;/b&gt; - Users currently in the channel will match (convenience for &apos;&lt;i&gt;sub,0,0,0&lt;/i&gt;&apos;).&lt;br /&gt;&lt;b&gt;out&lt;/b&gt; - Users outside the channel will match (convenience for &apos;&lt;i&gt;!sub,0,0,0&lt;/i&gt;&apos;).&lt;br /&gt;Note that an entry applies to either a user or a group, not both.</source>
-        <translation>이 항목이 적용되는 유저 그룹을 제어합니다.&lt;br /&gt;그룹은 항목이 사용되는 채널의 콘텍스트에서 평가됩니다. 예를 들어 Root 채널의 기본 ACL은 &lt;i&gt;관리자&lt;/i&gt; 그룹에 &lt;i&gt;쓰기&lt;/i&gt; 권한을 부여합니다. 이 항목이 채널에 상속된 경우 ACL이 시작된 채널의 &lt;i&gt;관리자&lt;/i&gt; 그룹에 속하지 않더라도 해당 채널의 &lt;i&gt;관리자&lt;/i&gt; 그룹에 속한 유저에게 쓰기 권한을 부여합니다. &lt;br /&gt;그룹 이름이 &apos;!&apos;로 시작하면 멤버 자격이 무효화되고, &apos;~&apos;로 시작하면 ACL이 활성화된 채널이 아닌 ACL이 정의된 채널에서 평가됩니다.&lt;br /&gt;그룹 이름이 &apos;#&apos;으로 시작하면 접근 토큰으로 해석됩니다. 유저는 일치하는 접근 토큰 목록에서 &apos;#&apos; 뒤에 오는 모든 항목을 입력해야 합니다. 이것은 인증되지 않은 유저에 대해 채널에 대한 매우 간단한 비밀번호를 사용할 수 있습니다.&lt;br /&gt;그룹 이름이 &apos;$&apos;로 시작하면 유저 인증서 해시가 &apos;$&apos; 뒤에 오는 것과 일치해야 합니다.&lt;br /&gt;미리 정의 된 몇 가지 특수 그룹:&lt;br /&gt;&lt;b&gt;all&lt;/b&gt; - 모두입니다.&lt;br /&gt;&lt;b&gt;auth&lt;/b&gt; - 인증된 모든 유저입니다.&lt;br /&gt;&lt;b&gt;sub,a,b,c&lt;/b&gt; - 현재 하위 채널 최소 &lt;i&gt;a&lt;/i&gt; 공통 부모에 속하며 체인 하단의 &lt;i&gt;b&lt;/i&gt; 채널과 &lt;i&gt;c&lt;/i&gt; 채널 사이에 있는 유저입니다. 자세한 내용은 웹 사이트를 참조하세요.&lt;br /&gt;&lt;b&gt;in&lt;/b&gt; - 현재 채널에 있는 유저입니다(convenience for &apos;&lt;i&gt;sub,0,0,0&lt;/i&gt;&apos;).&lt;br /&gt;&lt;b&gt;out&lt;/b&gt; - 채널 외부의 유저입니다(convenience for &apos;&lt;i&gt;!sub,0,0,0&lt;/i&gt;&apos;).&lt;br /&gt;항목은 유저 또는 그룹 중 하나에 적용되지만 둘 다에 적용되지 않습니다.</translation>
+        <translation>이 항목이 적용되는 유저 그룹을 제어합니다.&lt;br /&gt;그룹은 항목이 사용되는 채널의 콘텍스트에서 평가됩니다. 예를 들어 Root 채널의 기본 ACL은 &lt;i&gt;관리자&lt;/i&gt; 그룹에 &lt;i&gt;쓰기&lt;/i&gt; 권한을 부여합니다. 이 항목이 채널에 상속된 경우 ACL이 시작된 채널의 &lt;i&gt;관리자&lt;/i&gt; 그룹에 속하지 않더라도 해당 채널의 &lt;i&gt;관리자&lt;/i&gt; 그룹에 속한 유저에게 쓰기 권한을 부여합니다. &lt;br /&gt;그룹 이름이 &apos;!&apos;로 시작하면 멤버 자격이 무효화되고, &apos;~&apos;로 시작하면 ACL이 활성화된 채널이 아닌 ACL이 정의된 채널에서 평가됩니다.&lt;br /&gt;그룹 이름이 &apos;#&apos;으로 시작하면 접근 토큰으로 해석됩니다. 유저는 일치하는 접근 토큰 목록에서 &apos;#&apos; 뒤에 오는 모든 항목을 입력해야 합니다. 이것은 인증되지 않은 유저가 매우 간단한 비밀번호를 사용하여 채널에 접근할 수 있습니다.&lt;br /&gt;그룹 이름이 &apos;$&apos;로 시작하면 유저 인증서 해시가 &apos;$&apos; 뒤에 오는 것과 일치해야 합니다.&lt;br /&gt;미리 정의 된 몇 가지 특수 그룹:&lt;br /&gt;&lt;b&gt;all&lt;/b&gt; - 모두입니다.&lt;br /&gt;&lt;b&gt;auth&lt;/b&gt; - 인증된 모든 유저입니다.&lt;br /&gt;&lt;b&gt;sub,a,b,c&lt;/b&gt; - 현재 하위 채널 최소 &lt;i&gt;a&lt;/i&gt; 공통 부모에 속하며 체인 하단의 &lt;i&gt;b&lt;/i&gt; 채널과 &lt;i&gt;c&lt;/i&gt; 채널 사이에 있는 유저입니다. 자세한 내용은 웹 사이트를 참조하세요.&lt;br /&gt;&lt;b&gt;in&lt;/b&gt; - 현재 채널에 있는 유저입니다(convenience for &apos;&lt;i&gt;sub,0,0,0&lt;/i&gt;&apos;).&lt;br /&gt;&lt;b&gt;out&lt;/b&gt; - 채널 외부의 유저입니다(convenience for &apos;&lt;i&gt;!sub,0,0,0&lt;/i&gt;&apos;).&lt;br /&gt;항목은 유저 또는 그룹 중 하나에 적용되지만 둘 다에 적용되지 않습니다.</translation>
     </message>
     <message>
         <source>&lt;b&gt;Password&lt;/b&gt;&lt;br /&gt;This field allows you to easily set and change the password of a channel. It uses Mumble&apos;s access tokens feature in the background. Use ACLs and groups if you need more fine grained and powerful access control.</source>
@@ -802,7 +802,7 @@ This value allows you to set the maximum number of users allowed in the channel.
     </message>
     <message>
         <source>&lt;b&gt;This shows peak outgoing bandwidth used.&lt;/b&gt;&lt;br /&gt;This shows the peak amount of bandwidth sent out from your machine. Audio bitrate is the maximum bitrate (as we use VBR) for the audio data alone. Position is the bitrate used for positional information. Overhead is our framing and the IP packet headers (IP and UDP is 75% of this overhead).</source>
-        <translation>&lt;b&gt;사용 된 최고 송신 대역폭을 보여줍니다.&lt;/b&gt;&lt;br /&gt;컴퓨터에서 보낸 최고 대역폭 양을 보여줍니다. 오디오 비트 레이트는 오디오 데이터 전용의 최대 비트 레이트(VBR 사용 시)입니다. 위치는 위치 정보에 사용되는 비트레이트입니다. 오버헤드는 프레임 및 IP 패킷 헤더입니다(IP 및 UDP는이 오버헤드의 75%).</translation>
+        <translation>&lt;b&gt;사용 된 최고 송신 대역폭을 보여줍니다.&lt;/b&gt;&lt;br /&gt;컴퓨터에서 보낸 최고 대역폭 양을 보여줍니다. 오디오 비트레이트는 오디오 데이터 전용의 최대 비트레이트(VBR 사용 시)입니다. 위치는 위치 정보에 사용되는 비트레이트입니다. 오버헤드는 프레임 및 IP 패킷 헤더입니다(IP 및 UDP는이 오버헤드의 75%).</translation>
     </message>
     <message>
         <source>Audio Processing</source>
@@ -986,11 +986,11 @@ This value allows you to set the maximum number of users allowed in the channel.
     </message>
     <message>
         <source>Enable Opus&apos; low-delay mode when the quality is set to &lt;b&gt;64 kb/s&lt;/b&gt; or higher. </source>
-        <translation>품질이 &lt;b&gt;64 kb/s&lt;/b&gt;이상으로 설정된 경우 Opus&apos;의 저지연 모드를 활성화합니다. </translation>
+        <translation>품질이 &lt;b&gt;64 kb/s&lt;/b&gt;이상으로 설정된 경우 Opus의 저지연 모드를 활성화합니다. </translation>
     </message>
     <message>
         <source>If checked, Mumble will enable Opus&apos; low-delay mode when the quality is set to &lt;b&gt;64 kbit/s&lt;/b&gt; or higher. Low-delay mode decreases latency by &lt;b&gt;~15 milliseconds&lt;/b&gt; in the round trip. This mode may require an higher bitrate to preserve the same quality, in comparison with the music and VOIP modes.</source>
-        <translation>품질이 &lt;b&gt;64 kbit/s&lt;/b&gt;이상으로 설정 될 때 Mumble이 Opus&apos;의 저 지연 모드를 활성화합니다. 저지연 모드는 왕복에서 지연 시간을 &lt;b&gt;~15 밀리초&lt;/b&gt;까지 줄입니다. 이 모드는 음악 및 VOIP 모드와 비교하여 동일한 품질을 유지하려면 더 높은 비트레이트가 필요할 수 있습니다.</translation>
+        <translation>품질이 &lt;b&gt;64 kbit/s&lt;/b&gt;이상으로 설정 될 때 Mumble이 Opus의 저 지연 모드를 활성화합니다. 저지연 모드는 왕복에서 지연 시간을 &lt;b&gt;~15 밀리초&lt;/b&gt;까지 줄입니다. 이 모드는 음악 및 VOIP 모드와 비교하여 동일한 품질을 유지하려면 더 높은 비트레이트가 필요할 수 있습니다.</translation>
     </message>
     <message>
         <source>Allow low delay mode</source>
@@ -1153,11 +1153,11 @@ This value allows you to set the maximum number of users allowed in the channel.
     </message>
     <message>
         <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Preferences -&gt; Security &amp; Privacy -&gt; Privacy -&gt; Microphone.</source>
-        <translation>마이크에 대한 접근이 거부되었습니다. 시스템 환경 설정 -&gt; 보안 및 개인 정보 -&gt; 개인 정보 -&gt; 마이크에서 설정을 변경하여 Mumble이 마이크를 사용하도록 허용하세요.</translation>
+        <translation>마이크의 접근이 거부되었습니다. 시스템 환경 설정 -&gt; 보안 및 개인 정보 -&gt; 개인 정보 -&gt; 마이크에서 설정을 변경하여 Mumble이 마이크를 사용하도록 허용하세요.</translation>
     </message>
     <message>
         <source>Access to the microphone was denied. Please check that your operating system&apos;s microphone settings allow Mumble to use the microphone.</source>
-        <translation>마이크에 대한 접근이 거부되었습니다. 운영 체제의 마이크 설정에서 Mumble이 마이크를 사용할 수 있는지 확인하세요.</translation>
+        <translation>마이크의 접근이 거부되었습니다. 운영 체제의 마이크 설정에서 Mumble이 마이크를 사용할 수 있는지 확인하세요.</translation>
     </message>
     <message>
         <source>Disabled</source>
@@ -1306,7 +1306,7 @@ This value allows you to set the maximum number of users allowed in the channel.
     <message>
         <source>&lt;b&gt;This sets the packet latency variance for loopback testing.&lt;/b&gt;&lt;br /&gt;Most audio paths contain some variable latency. This allows you to set that variance for loopback mode testing. For example, if you set this to 15ms, this will emulate a network with 20-35ms ping latency or one with 80-95ms latency. Most domestic net connections have a variance of about 5ms.</source>
         <oldsource>&lt;b&gt;This sets the packet latency variance for loopback testing.&lt;/b&gt;&lt;br /&gt;Most audio paths contain some variable latency. This allows you set that variance for loopback mode testing. For example, if you set this to 15ms, this will emulate a network with 20-35ms ping latency or one with 80-95ms latency. Most domestic net connections have a variance of about 5ms.</oldsource>
-        <translation>&lt;b&gt;루프백 테스트를 위한 패킷 지연 시간 차이를 설정합니다.&lt;/b&gt;&lt;br /&gt;대부분의 오디오 경로에는 일부 가변 대기 시간이 포함되어 있습니다. 이를 통해 루프백 모드 테스트에 대한 분산을 설정할 수 있습니다. 예를 들어 이 값을 15ms로 설정하면 ping 지연 시간이 20-35ms인 네트워크나 80-95ms인 네트워크를 확인할 수 있습니다. 대부분의 국내 네트워크 연결의 편차는 대략 5ms입니다.</translation>
+        <translation>&lt;b&gt;루프백 테스트를 위한 패킷 지연 시간 차이를 설정합니다.&lt;/b&gt;&lt;br /&gt;대부분의 오디오 경로에는 일부 가변 대기 시간이 포함되어 있습니다. 이를 통해 루프백 모드 테스트의 분산을 설정할 수 있습니다. 예를 들어 이 값을 15ms로 설정하면 ping 지연 시간이 20-35ms인 네트워크나 80-95ms인 네트워크를 확인할 수 있습니다. 대부분의 국내 네트워크 연결의 편차는 대략 5ms입니다.</translation>
     </message>
     <message>
         <source>Packet Loss</source>
@@ -1918,7 +1918,7 @@ Mumble은 지속해서 개발 중이며 개발팀은 대부분의 유저에게 �
     </message>
     <message>
         <source>Submit anonymous statistics to the Mumble project</source>
-        <translation>Mumble 프로젝트 익명 통계 제출</translation>
+        <translation>Mumble 프로젝트에 익명 통계 제출</translation>
     </message>
     <message>
         <source>Push To Talk:</source>
@@ -2504,7 +2504,7 @@ Are you sure you wish to replace your certificate?
 &lt;/p&gt;
 </source>
         <translation>&lt;p&gt;이미 Mumble에 저장된 인증서가 있으며 인증서를 바꾸려고 합니다. &lt;/p&gt;
-&lt;p&gt;신뢰할 수 있는 CA에서 발급한 인증서로 업그레이드하는 경우 이메일 주소가 현재 인증서와 일치하면 완전히 안전하며, 연결하는 서버가 이메일 주소에 대한 강력한 인증서를 자동으로 인식합니다.
+&lt;p&gt;신뢰할 수 있는 CA에서 발급한 인증서로 업그레이드하는 경우 이메일 주소가 현재 인증서와 일치하면 완전히 안전하며, 연결하는 서버가 이메일 주소의 강력한 인증서를 자동으로 인식합니다.
 &lt;/p&gt;
 &lt;p&gt;그렇지 않으면 이전에 인증한 서버에서 더 이상 인식되지 않습니다. 아직 서버에 등록되지 않았다면 걱정할 필요가 없습니다.
 &lt;/p&gt;
@@ -2559,7 +2559,7 @@ Are you sure you wish to replace your certificate?
     </message>
     <message>
         <source>&lt;p&gt;Mumble will now generate a strong certificate for authentication to servers.&lt;/p&gt;&lt;p&gt;If you wish, you may provide some additional information to be stored in the certificate, which will be presented to servers when you connect. If you provide a valid email address, you can upgrade to a CA issued email certificate later on, which provides strong identification.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Mumble은 서버에 대한 인증을 위한 강력한 인증서를 생성합니다.&lt;/p&gt;&lt;p&gt;원하는 경우 인증서에 저장할 추가 정보를 제공할 수 있으며, 이 정보는 연결할 때 서버에 제공됩니다. 유효한 이메일 주소를 제공하는 경우 나중에 CA에서 발급한 전자 메일 인증서로 업그레이드하여 강력한 식별 기능을 제공할 수 있습니다.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Mumble은 서버의 인증을 위한 강력한 인증서를 생성합니다.&lt;/p&gt;&lt;p&gt;원하는 경우 인증서에 저장할 추가 정보를 제공할 수 있으며, 이 정보는 연결할 때 서버에 제공됩니다. 유효한 이메일 주소를 제공하는 경우 나중에 CA에서 발급한 전자 메일 인증서로 업그레이드하여 강력한 식별 기능을 제공할 수 있습니다.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2609,7 +2609,7 @@ Are you sure you wish to replace your certificate?
     </message>
     <message>
         <source>&lt;p&gt;Mumble can use certificates to authenticate with servers. Using certificates avoids passwords, meaning you don&apos;t need to disclose any password to the remote site. It also enables very easy user registration and a client side friends list independent of servers.&lt;/p&gt;&lt;p&gt;While Mumble can work without certificates, the majority of servers will expect you to have one.&lt;/p&gt;&lt;p&gt;Creating a new certificate automatically is sufficient for most use cases. But Mumble also supports certificates representing trust in the users ownership of an email address. These certificates are issued by third parties. For more information see our &lt;a href=&quot;http://mumble.info/certificate.php&quot;&gt;user certificate documentation&lt;/a&gt;. &lt;/p&gt;</source>
-        <translation>&lt;p&gt;Mumble은 인증서를 사용하여 서버를 인증할 수 있습니다. 인증서를 사용하면 비밀번호가 사용되지 않음으로 원격 사이트에 비밀번호를 노출할 필요가 없습니다. 또한, 서버와 관계없이 매우 쉬운 유저 등록과 클라이언트 측 친구 목록을 사용할 수 있습니다.&lt;/p&gt;&lt;p&gt;Mumble은 인증서 없이 작동할 수 있지만, 대부분의 서버는 유저가 인증서를 가질 것으로 예상합니다.&lt;/p&gt;&lt;p&gt;새 인증서를 자동으로 만드는 것은 대부분의 사용 사례에 충분합니다. 그러나 Mumble은 이메일 주소의 유저 소유권에 대한 신뢰를 나타내는 인증서도 지원합니다. 이러한 인증서는 제삼자가 발급합니다. 자세한 내용은 &lt;a href=&quot;http://mumble.info/certificate.php&quot;&gt;유저 인증서 문서&lt;/a&gt;를 참조하세요.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Mumble은 인증서를 사용하여 서버를 인증할 수 있습니다. 인증서를 사용하면 비밀번호가 사용되지 않음으로 원격 사이트에 비밀번호를 노출할 필요가 없습니다. 또한, 서버와 관계없이 매우 쉬운 유저 등록과 클라이언트 측 친구 목록을 사용할 수 있습니다.&lt;/p&gt;&lt;p&gt;Mumble은 인증서 없이 작동할 수 있지만, 대부분의 서버는 유저가 인증서를 가질 것으로 예상합니다.&lt;/p&gt;&lt;p&gt;새 인증서를 자동으로 만드는 것은 대부분의 사용 사례에 충분합니다. 그러나 Mumble은 이메일 주소의 유저 소유권에 신뢰를 나타내는 인증서도 지원합니다. 이러한 인증서는 제삼자가 발급합니다. 자세한 내용은 &lt;a href=&quot;http://mumble.info/certificate.php&quot;&gt;유저 인증서 문서&lt;/a&gt;를 참조하세요.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -2652,7 +2652,7 @@ Are you sure you wish to replace your certificate?
     </message>
     <message>
         <source>This represents total access to the channel, including the ability to change group and ACL information. This privilege implies all other privileges.</source>
-        <translation>그룹 및 ACL 정보를 변경하는 기능을 포함하여 채널에 대한 전체 접근을 나타냅니다. 이 권한은 다른 모든 권한을 의미합니다.</translation>
+        <translation>그룹 및 ACL 정보를 변경하는 기능을 포함하여 채널의 전체 접근을 나타냅니다. 이 권한은 다른 모든 권한을 의미합니다.</translation>
     </message>
     <message>
         <source>This represents the permission to traverse the channel. If a user is denied this privilege, he will be unable to access this channel and any sub-channels in any way, regardless of other permissions in the sub-channels.</source>
@@ -2672,11 +2672,11 @@ Are you sure you wish to replace your certificate?
     </message>
     <message>
         <source>This represents the permission to mute and deafen other users. Once muted, a user will stay muted until he is unmuted by another privileged user or reconnects to the server.</source>
-        <translation>다른 유저의 마이크 음소거 및 오디오 음소거에 대한 권한을 나타냅니다. 일단 마이크 음소거가 되면 다른 권한 있는 유저가 마이크 음소거가 해제되거나 서버에 다시 연결될 때까지 마이크 음소거를 유지합니다.</translation>
+        <translation>다른 유저의 마이크 음소거 및 오디오 음소거의 권한을 나타냅니다. 일단 마이크 음소거가 되면 다른 권한 있는 유저가 마이크 음소거가 해제되거나 서버에 다시 연결될 때까지 마이크 음소거를 유지합니다.</translation>
     </message>
     <message>
         <source>This represents the permission to move a user to another channel or kick him from the server. To actually move the user, either the moving user must have Move privileges in the destination channel, or the user must normally be allowed to enter the channel. Users with this privilege can move users into channels the target user normally wouldn&apos;t have permission to enter.</source>
-        <translation>유저를 다른 채널로 이동시키거나 서버에서 유저를 추방할 수 있는 권한을 나타냅니다. 실제로 유저가 채널을 이동하려면 대상 채널에 대한 이동 권한이 있거나 해당 채널에 들어갈 수 있도록 허용되어야 합니다. 이 권한이 있는 유저는 대상 유저에게 일반적으로 입장할 수 없는 채널로 유저를 이동할 수 있습니다.</translation>
+        <translation>유저를 다른 채널로 이동시키거나 서버에서 유저를 추방할 수 있는 권한을 나타냅니다. 실제로 유저가 채널을 이동하려면 대상 채널의 이동 권한이 있거나 해당 채널에 들어갈 수 있도록 허용되어야 합니다. 이 권한이 있는 유저는 대상 유저에게 일반적으로 입장할 수 없는 채널로 유저를 이동할 수 있습니다.</translation>
     </message>
     <message>
         <source>This represents the permission to make sub-channels. The user making the sub-channel will be added to the admin group of the sub-channel.</source>
@@ -2866,7 +2866,7 @@ Are you sure you wish to replace your certificate?
     </message>
     <message>
         <source>Restore defaults for current page</source>
-        <translation>현재 페이지 기본값 복원</translation>
+        <translation>현재 페이지의 기본값 복원</translation>
     </message>
     <message>
         <source>Mumble Configuration</source>
@@ -2878,7 +2878,7 @@ Are you sure you wish to replace your certificate?
     </message>
     <message>
         <source>This button will restore the defaults for the settings on the current page. Other pages will not be changed.&lt;br /&gt;To restore all settings to their defaults, you can press the &quot;Defaults (All)&quot; button.</source>
-        <translation>이 버튼은 현재 페이지의 설정에 대한 기본값을 복원합니다. 다른 페이지는 변경되지 않습니다.&lt;br /&gt;모든 설정을 기본값으로 복원하려면 &quot;기본값 (모두)&quot;버튼을 누르세요.</translation>
+        <translation>이 버튼은 현재 페이지의 설정을 기본값을 복원합니다. 다른 페이지는 변경되지 않습니다.&lt;br /&gt;모든 설정을 기본값으로 복원하려면 &quot;기본값 (모두)&quot;버튼을 누르세요.</translation>
     </message>
     <message>
         <source>Restore all defaults</source>
@@ -3273,7 +3273,7 @@ Label of the server. This is what the server will be named like in your server l
     </message>
     <message>
         <source>Internal error encountered in CrashReporter.cpp: Received network reply does not contain an HTTP status code. Please inform a developer about error code %1</source>
-        <translation>CrashReporter.cpp에서 발생한 내부 오류: 수신된 네트워크 응답에 HTTP 상태 코드가 포함되어 있지 않습니다. 오류 코드 %1에 대해 개발자에게 알리세요</translation>
+        <translation>CrashReporter.cpp에서 발생한 내부 오류: 수신된 네트워크 응답에 HTTP 상태 코드가 포함되어 있지 않습니다. %1 오류 코드를 개발자에게 알려주세요</translation>
     </message>
 </context>
 <context>
@@ -3382,7 +3382,7 @@ Label of the server. This is what the server will be named like in your server l
     </message>
     <message>
         <source>&lt;b&gt;Enable GKey&lt;/b&gt;.&lt;br /&gt;This setting enables support for the GKey shortcut engine, for &quot;G&quot;-keys found on Logitech keyboards.</source>
-        <translation>&lt;b&gt;G키 활성화&lt;/b&gt;&lt;br /&gt;이 설정을 사용하면 로지텍 키보드에 있는 &quot;G&quot; 키에 대한 G키 단축키 엔진을 지원할 수 있습니다.</translation>
+        <translation>&lt;b&gt;G키 활성화&lt;/b&gt;&lt;br /&gt;이 설정을 사용하면 로지텍 키보드에 있는 &quot;G&quot;-키를 G키 단축키 엔진에 지원할 수 있습니다.</translation>
     </message>
     <message>
         <source>Enable GKey</source>
@@ -3421,7 +3421,7 @@ Without this option enabled, using Mumble&apos;s global shortcuts in privileged 
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Starts the capture process: all buttons you press will be added to the tree.&lt;/p&gt;&lt;p&gt;Once all buttons are released, the capture process stops automatically.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;캡처 프로세스를 시작합니다: 누르는 모든 버튼이 추가됩니다.&lt;/p&gt;&lt;p&gt;모든 버튼을 놓으면 캡처 프로세스가 자동으로 중지됩니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;캡처 프로세스를 시작합니다: 누르는 모든 버튼이 목록에 추가됩니다.&lt;/p&gt;&lt;p&gt;모든 버튼을 놓으면 캡처 프로세스가 자동으로 중지됩니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Add</source>
@@ -3630,7 +3630,7 @@ Without this option enabled, using Mumble&apos;s global shortcuts in privileged 
 This field describes the size of an LCD device. The size is given either in pixels (for Graphic LCDs) or in characters (for Character LCDs).&lt;/p&gt;
 &lt;h3&gt;Enabled:&lt;/h3&gt;
 &lt;p&gt;This decides whether Mumble should draw to a particular LCD device.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;시스템에서 사용 가능한 LCD 장치 목록입니다. 장치 이름은 나열되지만 디스플레이 크기도 포함됩니다. Mumble은 한 번에 여러 LCD 장치에 대한 출력을 지원합니다.&lt;/p&gt;
+        <translation>&lt;p&gt;시스템에서 사용 가능한 LCD 장치 목록입니다. 장치 이름은 나열되지만 디스플레이 크기도 포함됩니다. Mumble은 한 번에 여러 LCD 장치의 출력을 지원합니다.&lt;/p&gt;
 &lt;h3&gt;크기:&lt;/h3&gt;
 &lt;p&gt;
 이 필드는 LCD 장치의 크기를 설명합니다. 크기는 픽셀(그래픽 LCD의 경우) 또는 문자(문자 LCD의 경우)로 지정됩니다.&lt;/p&gt;
@@ -3773,7 +3773,7 @@ This field describes the size of an LCD device. The size is given either in pixe
     </message>
     <message>
         <source>[[ Text object too large to display ]]</source>
-        <translation>[[ 텍스트 개체가 너무 커서 표시할 수 없음 ]]</translation>
+        <translation>[[ 텍스트 객체가 너무 커서 표시할 수 없음 ]]</translation>
     </message>
     <message>
         <source>[Date changed to %1]
@@ -3858,23 +3858,23 @@ This field describes the size of an LCD device. The size is given either in pixe
     <name>LogConfig</name>
     <message>
         <source>Toggle console for %1 events</source>
-        <translation>%1 이벤트에 대한 콘솔 전환</translation>
+        <translation>%1 이벤트의 콘솔 전환</translation>
     </message>
     <message>
         <source>Toggle pop-up notifications for %1 events</source>
-        <translation>%1 이벤트에 대한 팝업 알림 전환</translation>
+        <translation>%1 이벤트의 팝업 알림 전환</translation>
     </message>
     <message>
         <source>Toggle Text-To-Speech for %1 events</source>
-        <translation>%1 이벤트에 대해 텍스트-음성-변환 전환</translation>
+        <translation>%1 이벤트의 텍스트-음성-변환 전환</translation>
     </message>
     <message>
         <source>Click here to toggle sound notification for %1 events</source>
-        <translation>%1 이벤트에 대한 소리 알림을 전환하려면 여기를 클릭</translation>
+        <translation>%1 이벤트의 소리 알림을 전환하려면 여기를 클릭</translation>
     </message>
     <message>
         <source>Toggle window highlight (if not active) for %1 events</source>
-        <translation>%1 이벤트에 대해 윈도우 강조 표시(활성화되지 않은 경우) 전환</translation>
+        <translation>%1 이벤트의 창 강조 표시(활성화되지 않은 경우) 전환</translation>
     </message>
     <message>
         <source>Path to sound file used for sound notifications in the case of %1 events&lt;br /&gt;Single click to play&lt;br /&gt;Double-click to change</source>
@@ -3882,30 +3882,30 @@ This field describes the size of an LCD device. The size is given either in pixe
     </message>
     <message>
         <source>Click here to toggle console output for %1 events.&lt;br /&gt;If checked, this option makes Mumble output all %1 events in its message log.</source>
-        <translation>%1 이벤트에 대한 콘솔 출력을 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 Mumble이 메시지 로그에 있는 모든 %1 이벤트를 출력합니다.</translation>
+        <translation>%1 이벤트의 콘솔 출력을 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 Mumble이 메시지 로그에 있는 모든 %1 이벤트를 출력합니다.</translation>
     </message>
     <message>
         <source>Click here to toggle pop-up notifications for %1 events.&lt;br /&gt;If checked, a notification pop-up will be created by Mumble for every %1 event.</source>
         <oldsource>Click here to toggle pop-up notifications for %1 events.&lt;br /&gt;If checked, a notification pop-up will be created by mumble for every %1 event.</oldsource>
-        <translation>%1 이벤트에 대한 팝업 알림을 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 %1 이벤트마다 Mumble에 의해 알림 팝업이 생성됩니다.</translation>
+        <translation>%1 이벤트의 팝업 알림을 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 %1 이벤트마다 Mumble에 의해 알림 팝업이 생성됩니다.</translation>
     </message>
     <message>
         <source>Click here to toggle window highlight for %1 events.&lt;br /&gt;If checked, Mumble&apos;s window will be highlighted for every %1 event, if not active.</source>
-        <translation>%1 이벤트에 대한 윈도우 강조 표시를 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 Mumble의 창이 활성화되지 않은 경우 %1 이벤트마다 강조 표시됩니다.</translation>
+        <translation>%1 이벤트의 창 강조 표시를 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 Mumble의 창이 활성화되지 않은 경우 %1 이벤트마다 강조 표시됩니다.</translation>
     </message>
     <message>
         <source>Path to sound file used for sound notifications in the case of %1 events.&lt;br /&gt;Single click to play&lt;br /&gt;Double-click to change&lt;br /&gt;Ensure that sound notifications for these events are enabled or this field will not have any effect.</source>
-        <translation>%1 이벤트의 경우 소리 알림에 사용되는 사운드 파일의 경로입니다.&lt;br /&gt;한 번 클릭하여 재생&lt;br /&gt;두 번 클릭하여 변경&lt;br /&gt;이러한 이벤트에 대한 소리 알림이 활성화되어있지 않으면 이 필드가 아무런 영향도 미치지 않습니다.</translation>
+        <translation>%1 이벤트의 경우 소리 알림에 사용되는 사운드 파일의 경로입니다.&lt;br /&gt;한 번 클릭하여 재생&lt;br /&gt;두 번 클릭하여 변경&lt;br /&gt;이러한 이벤트의 소리 알림이 활성화되어있지 않으면 이 필드가 아무런 영향도 미치지 않습니다.</translation>
     </message>
     <message>
         <source>Click here to toggle Text-To-Speech for %1 events.&lt;br /&gt;If checked, Mumble uses Text-To-Speech to read %1 events out loud to you. Text-To-Speech is also able to read the contents of the event which is not true for sound files. Text-To-Speech and sound files cannot be used at the same time.</source>
         <oldsource>Click here to toggle sound notification for %1 events.&lt;br /&gt;If checked, Mumble uses a soundfile predefined by you to indicate %1 events. Soundfiles and Text-To-Speech cannot be used at the same time.</oldsource>
-        <translation>%1 이벤트에 대해 텍스트-음성-변환을 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 Mumble이텍스트-음성-변환을 사용하여 %1 이벤트를 읽어줍니다. 텍스트-음성-변환은 사운드 파일에 적용되지 않는 이벤트 내용을 읽을 수 있습니다. 텍스트-음성-변환과 사운드 파일을 동시에 사용할 수 없습니다.</translation>
+        <translation>%1 이벤트의 텍스트-음성-변환을 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 Mumble이텍스트-음성-변환을 사용하여 %1 이벤트를 읽어줍니다. 텍스트-음성-변환은 사운드 파일에 적용되지 않는 이벤트 내용을 읽을 수 있습니다. 텍스트-음성-변환과 사운드 파일을 동시에 사용할 수 없습니다.</translation>
     </message>
     <message>
         <source>Click here to toggle sound notification for %1 events.&lt;br /&gt;If checked, Mumble uses a sound file predefined by you to indicate %1 events. Sound files and Text-To-Speech cannot be used at the same time.</source>
         <oldsource>Path to soundfile used for sound notifications in the case of %1 events.&lt;br /&gt;Single click to play&lt;br /&gt;Doubleclick to change&lt;br /&gt;Be sure that sound notifications for these events are enabled or this field will not have any effect.</oldsource>
-        <translation>%1 이벤트에 대한 소리 알림을 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 Mumble은 %1 이벤트의 미리 정의한 사운드 파일을 사용합니다. 사운드 파일과 텍스트-음성-변환은 동시에 사용할 수 없습니다.</translation>
+        <translation>%1 이벤트의 소리 알림을 전환하려면 여기를 클릭하세요.&lt;br /&gt;이 옵션을 선택하면 Mumble은 %1 이벤트의 미리 정의한 사운드 파일을 사용합니다. 사운드 파일과 텍스트-음성-변환은 동시에 사용할 수 없습니다.</translation>
     </message>
     <message>
         <source>Messages</source>
@@ -4226,7 +4226,7 @@ The setting only applies for new messages, the already shown ones will retain th
     </message>
     <message>
         <source>&lt;b&gt;If set, minimizing the Mumble main window will cause it to be hidden and accessible only from the tray. Otherwise, it will be minimized as a window normally would.&lt;/b&gt;</source>
-        <translation>&lt;b&gt;설정된 경우 Mumble 기본 창을 최소화하면 창이 숨겨지고 트레이에서만 접근할 수 있습니다. 그렇지 않으면 윈도우가 정상적으로 최소화됩니다.&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;설정된 경우 Mumble 메인 창을 최소화하면 창이 숨겨지고 트레이에서만 접근할 수 있습니다. 그렇지 않으면 창이 정상적으로 최소화됩니다.&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Hide in tray when minimized</source>
@@ -4318,7 +4318,7 @@ The setting only applies for new messages, the already shown ones will retain th
     </message>
     <message>
         <source>&lt;b&gt;Configures which theme the Mumble user interface should be styled with&lt;/b&gt;&lt;br /&gt;Mumble will pick up themes from certain directories and display them in this list. The one you select will be used to customize the visual appearance of Mumble. This includes colors, icons and more.</source>
-        <translation>&lt;b&gt;Mumble 유저 인터페이스의 스타일을 지정할 테마를 구성&lt;/b&gt;&lt;br /&gt;Mumble은 특정 디렉토리에서 테마를 선택하여 이 목록에 표시합니다. 선택한 항목은 Mumble의 시각적 모양을 사용자 지정하는 데 사용됩니다. 여기에는 색상, 아이콘 등이 포함됩니다.</translation>
+        <translation>&lt;b&gt;Mumble 유저 인터페이스의 스타일을 지정할 테마를 구성&lt;/b&gt;&lt;br /&gt;Mumble은 특정 디렉터리에서 테마를 선택하여 이 목록에 표시합니다. 선택한 항목은 Mumble의 시각적 모양을 사용자 지정하는 데 사용됩니다. 여기에는 색상, 아이콘 등이 포함됩니다.</translation>
     </message>
     <message>
         <source>User Dragging</source>
@@ -4358,7 +4358,7 @@ The setting only applies for new messages, the already shown ones will retain th
     </message>
     <message>
         <source>Remove silent user after</source>
-        <translation>이후 침묵 유저 삭제</translation>
+        <translation>이후 침묵한 유저 삭제</translation>
     </message>
     <message>
         <source>If this is checked, the local user (yourself) will always be visible in the TalkingUI (regardless of talking state).</source>
@@ -4474,11 +4474,11 @@ The setting only applies for new messages, the already shown ones will retain th
     </message>
     <message>
         <source>Silent user lifetime</source>
-        <translation>침묵 유저 수명</translation>
+        <translation>침묵한 유저 수명</translation>
     </message>
     <message>
         <source>Show the local volume adjustment for each user (if any).</source>
-        <translation>각 유저에 대한 로컬 볼륨 조절을 표시합니다(있는 경우).</translation>
+        <translation>각 유저의 로컬 볼륨 조절을 표시합니다(있는 경우).</translation>
     </message>
     <message>
         <source>Show volume adjustments</source>
@@ -4601,7 +4601,7 @@ The setting only applies for new messages, the already shown ones will retain th
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation>윈도우(&amp;W)</translation>
+        <translation>창(&amp;W)</translation>
     </message>
     <message>
         <source>Minimize</source>
@@ -4766,12 +4766,12 @@ The setting only applies for new messages, the already shown ones will retain th
     <message>
         <source>&lt;center&gt;Type message to channel &apos;%1&apos; here&lt;/center&gt;</source>
         <oldsource>Type message to channel &apos;%1&apos; here</oldsource>
-        <translation>&lt;center&gt;여기에 채널 &apos;%1&apos;에 대한 메시지를 입력&lt;/center&gt;</translation>
+        <translation>&lt;center&gt;&apos;%1&apos; 채널의 메시지를 입력&lt;/center&gt;</translation>
     </message>
     <message>
         <source>&lt;center&gt;Type message to user &apos;%1&apos; here&lt;/center&gt;</source>
         <oldsource>Type message to user &apos;%1&apos; here</oldsource>
-        <translation>&lt;center&gt;여기에 유저 &apos;%1&apos;에 대한 메시지를 입력&lt;/center&gt;</translation>
+        <translation>&lt;center&gt;&apos;%1&apos; 유저의 메시지를 입력&lt;/center&gt;</translation>
     </message>
     <message>
         <source>Choose image file</source>
@@ -5030,7 +5030,7 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Wrong server password for unregistered user account, please try again.</source>
-        <translation>등록되지 않은 유저 계정에 대한 서버 비밀번호가 잘못되었습니다. 다시 시도하세요.</translation>
+        <translation>등록되지 않은 유저 계정의 서버 비밀번호가 잘못되었습니다. 다시 시도하세요.</translation>
     </message>
     <message>
         <source>Images (*.png *.jpg *.jpeg)</source>
@@ -5134,7 +5134,7 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>This opens the Group and ACL dialog for the channel, to control permissions.</source>
-        <translation>권한을 제어하기 위해 채널에 대한 그룹 및 ACL 대화 상자가 열립니다.</translation>
+        <translation>권한을 제어하기 위해 채널의 그룹 및 ACL 대화 상자가 열립니다.</translation>
     </message>
     <message>
         <source>&amp;Link</source>
@@ -5276,67 +5276,67 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Pops up a small dialog with information about your current audio input.</source>
-        <translation>현재의 음성 입력 정보를 표시하는 대화 상자가 팝업 됩니다.</translation>
+        <translation>현재 오디오 입력에 대한 정보가 포함된 작은 대화 상자를 엽니다.</translation>
     </message>
     <message>
         <source>Forcibly unlink plugin</source>
-        <translation>강제로 플러그인을 해제</translation>
+        <translation>플러그인 강제 링크 해제</translation>
     </message>
     <message>
         <source>This forces the current plugin to unlink, which is handy if it is reading completely wrong data.</source>
-        <translation>현재 플러그 인을 강제로 해제 합니다. 어긋난 데이터를 읽고 있을 때 사용하세요.</translation>
+        <translation>현재 플러그인의 링크가 해제되며, 완전히 잘못된 데이터를 읽을 때 유용합니다.</translation>
     </message>
     <message>
         <source>Configure Mumble</source>
-        <translation>Mumble 설정</translation>
+        <translation>Mumble 구성</translation>
     </message>
     <message>
         <source>Allows you to change most settings for Mumble.</source>
-        <translation>Mumble의 여러가지 설정을 합니다.</translation>
+        <translation>Mumble의 대부분의 설정을 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>Start the audio configuration wizard</source>
-        <translation>사운드 설정 마법사를 시작합니다</translation>
+        <translation>오디오 구성 마법사 시작</translation>
     </message>
     <message>
         <source>This will guide you through the process of configuring your audio hardware.</source>
-        <translation>사운드 하드웨어 프로세스 설정에 안내합니다.</translation>
+        <translation>오디오 하드웨어를 구성하는 프로세스를 안내합니다.</translation>
     </message>
     <message>
         <source>&amp;What&apos;s This?</source>
-        <translation>이것은 무엇입니까(&amp;W)?</translation>
+        <translation>이게 뭘까요(&amp;W)?</translation>
     </message>
     <message>
         <source>Enter What&apos;s This? mode</source>
-        <translation>What&apos;s This?모드로 이행합니다</translation>
+        <translation>이게 뭘까요? 모드 시작</translation>
     </message>
     <message>
         <source>Click this to enter &quot;What&apos;s This?&quot; mode. Your cursor will turn into a question mark. Click on any button, menu choice or area to show a description of what it is.</source>
-        <translation>클릭 하면 &quot;What&apos;s This?&quot; 모드에 들어갑니다. 마우스 커서는 의문 부호가 표시 되어 어떤 버튼을 누르면 선택된 메뉴나 구역이 어떤 기능이 있는지에 대한 설명을 표시합니다.</translation>
+        <translation>이 옵션을 클릭하면 &quot;이게 뭘까요?&quot; 모드를 시작합니다. 커서가 물음표로 바뀝니다. 버튼, 메뉴 선택 또는 영역을 클릭하여 해당 항목에 대한 설명을 표시합니다.</translation>
     </message>
     <message>
         <source>Information about Mumble</source>
-        <translation>Mumble 정보에 대해서</translation>
+        <translation>Mumble에 대한 정보</translation>
     </message>
     <message>
         <source>Shows a small dialog with information and license for Mumble.</source>
-        <translation>Mumble 정보와 라이센스에 대한 대화 상자를 표시합니다.</translation>
+        <translation>Mumble에 대한 정보 및 라이선스가 있는 작은 대화 상자를 표시합니다.</translation>
     </message>
     <message>
         <source>Information about Speex</source>
-        <translation>Speex 정보에 대해서</translation>
+        <translation>Speex에 대한 정보</translation>
     </message>
     <message>
         <source>Shows a small dialog with information about Speex.</source>
-        <translation>Speex 정보를 위한 대화 상자를 표시합니다.</translation>
+        <translation>Speex에 대한 정보가 포함된 작은 대화 상자를 표시합니다.</translation>
     </message>
     <message>
         <source>Information about Qt</source>
-        <translation>Qt 정보에 대해서</translation>
+        <translation>Qt에 대한 정보</translation>
     </message>
     <message>
         <source>Shows a small dialog with information about Qt.</source>
-        <translation>Qt 정보를 위한 대화 상자를 표시합니다.</translation>
+        <translation>Qt에 대한 정보가 포함된 작은 대화 상자를 표시합니다.</translation>
     </message>
     <message>
         <source>Check for &amp;Updates</source>
@@ -5344,31 +5344,31 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Check for new version of Mumble</source>
-        <translation>Mumble의 새 버전이 있는지 확인합니다</translation>
+        <translation>Mumble의 새 버전 확인</translation>
     </message>
     <message>
         <source>Connects to the Mumble webpage to check if a new version is available, and notifies you with an appropriate download URL if this is the case.</source>
-        <translation>Mumble 웹 페이지에 접속하여 새로운 버전이 나와있는지를 확인합니다. 만약 새로운 업데이트가 있다면 다운로드 URL을 공지 합니다</translation>
+        <translation>Mumble 웹 페이지에 연결하여 새 버전을 사용할 수 있는지 확인하고, 이 경우 적절한 다운로드 URL을 알려 줍니다.</translation>
     </message>
     <message>
         <source>Sends a text message to all users in a channel.</source>
-        <translation>채널 내의 모든 유저에게 메시지를 송신합니다.</translation>
+        <translation>채널의 모든 사용자에게 문자 메시지를 보냅니다.</translation>
     </message>
     <message>
         <source>Configure certificates for strong authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>강력한 인증을 위한 인증서 구성</translation>
     </message>
     <message>
         <source>This starts the wizard for creating, importing and exporting certificates for authentication against servers.</source>
-        <translation>서버 인증을 위한 증명서를 작성·불러오기 또는 내보내기 위한 마법사를 시작합니다.</translation>
+        <translation>서버에 대한 인증을 위한 인증서를 생성, 가져오기 및 내보내기 마법사가 시작됩니다.</translation>
     </message>
     <message>
         <source>Register user on server</source>
-        <translation>서버상에 유저를 등록한다.</translation>
+        <translation>서버에 유저 등록</translation>
     </message>
     <message>
         <source>This will permanently register the user on the server.</source>
-        <translation>영구적으로 서버에 유저 등록합니다.</translation>
+        <translation>서버에 유저를 영구적으로 등록합니다.</translation>
     </message>
     <message>
         <source>Add &amp;Friend</source>
@@ -5376,11 +5376,11 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Adds a user as your friend.</source>
-        <translation>당신의 친구로 유저를 추가합니다.</translation>
+        <translation>유저를 친구로 추가합니다.</translation>
     </message>
     <message>
         <source>This will add the user as a friend, so you can recognize him on this and other servers.</source>
-        <translation>사용자를 친구로 추가합니다. 다른 서버상에서도 그 사용자를 구분할 수 있습니다.</translation>
+        <translation>유저가 친구로 추가되므로 이 서버와 다른 서버에서 해당 유저를 인식할 수 있습니다.</translation>
     </message>
     <message>
         <source>&amp;Remove Friend</source>
@@ -5388,11 +5388,11 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Removes a user from your friends.</source>
-        <translation>친구로부터 사용자를 삭제합니다.</translation>
+        <translation>친구에서 유저를 삭제합니다.</translation>
     </message>
     <message>
         <source>This will remove a user from your friends list.</source>
-        <translation>친구 목록에서 사용자를 삭제합니다.</translation>
+        <translation>친구 목록에서 유저를 제거합니다.</translation>
     </message>
     <message>
         <source>&amp;Update Friend</source>
@@ -5400,23 +5400,23 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Update name of your friend.</source>
-        <translation>친구의 이름을 업데이트합니다.</translation>
+        <translation>친구의 이름을 변경합니다.</translation>
     </message>
     <message>
         <source>Your friend uses a different name than what is in your database. This will update the name.</source>
-        <translation>당신의 친구가 데이터베이스에 등록된 것과 다른 이름을 사용하고 있습니다. 이름을 갱신 합니다.</translation>
+        <translation>친구가 데이터베이스에 있는 이름과 다른 이름을 사용합니다. 이름이 변경됩니다.</translation>
     </message>
     <message>
         <source>Edit registered users list</source>
-        <translation>등록된 사용자의 명단 편집</translation>
+        <translation>등록된 유저 목록 편집</translation>
     </message>
     <message>
         <source>This opens the editor for registered users, which allow you to change their name or unregister them.</source>
-        <translation>권한 관리를 위해 등록 된 사용자 편집 대화 상자를 엽니다.(사용자의 이름을 변경하거나 등록을 삭제하거나 할 수 있습니다).</translation>
+        <translation>등록된 유저의 이름을 변경하거나 등록을 취소할 수 있는 편집기가 열립니다.</translation>
     </message>
     <message>
         <source>Add or remove text-based access tokens</source>
-        <translation>액세스 토큰을 추가 또는 삭제합니다.</translation>
+        <translation>텍스트 기반 접근 토큰 추가 또는 삭제</translation>
     </message>
     <message>
         <source>&amp;Minimal View</source>
@@ -5424,63 +5424,63 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Toggle minimal window modes</source>
-        <translation type="unfinished">간소화 모드 전환</translation>
+        <translation>최소 창 모드 전환</translation>
     </message>
     <message>
         <source>This will toggle minimal mode, where the log window and menu is hidden.</source>
-        <translation>로그 화면과 메뉴를 생략한 간소화 전환을 합니다.</translation>
+        <translation>로그 창과 메뉴가 숨겨져 있는 최소 모드가 전환됩니다.</translation>
     </message>
     <message>
         <source>You muted and deafened %1.</source>
-        <translation>%1을 발언 청취 금지 했습니다.</translation>
+        <translation>%1의 마이크 음소거 및 오디오 음소거를 설정했습니다.</translation>
     </message>
     <message>
         <source>You unmuted and undeafened %1.</source>
-        <translation>%1의 발언·청취 금지를 해제했습니다.</translation>
+        <translation>%1의 마이크 음소거 및 오디오 음소거를 해제했습니다.</translation>
     </message>
     <message>
         <source>You undeafened %1.</source>
-        <translation>%1의 청취 금지를 해제했습니다.</translation>
+        <translation>%1의 오디오 음소거를 해제했습니다.</translation>
     </message>
     <message>
         <source>You suppressed %1.</source>
-        <translation>%1의 발언을 금지했습니다.</translation>
+        <translation>%1의 억제를 설정했습니다.</translation>
     </message>
     <message>
         <source>%1 muted and deafened by %2.</source>
-        <translation>%2가%1의 발언·청취를 금지했습니다.</translation>
+        <translation>%2이(가) %1의 마이크 음소거 및 오디오 음소거를 설정했습니다.</translation>
     </message>
     <message>
         <source>%1 unmuted and undeafened by %2.</source>
-        <translation>%2가%1의 발언·청취 금지를 해제했습니다.</translation>
+        <translation>%2이(가) %1의 마이크 음소거 및 오디오 음소거를 해제했습니다.</translation>
     </message>
     <message>
         <source>%1 undeafened by %2.</source>
-        <translation>%2가%1의 청취 금지를 해제했습니다.</translation>
+        <translation>%2이(가) %1의 오디오 음소거를 해제했습니다.</translation>
     </message>
     <message>
         <source>%1 suppressed by %2.</source>
-        <translation>%2가%1의 발언을 금지했습니다.</translation>
+        <translation>%2이(가) %1의 억제를 설정했습니다.</translation>
     </message>
     <message>
         <source>%1 moved to %2.</source>
-        <translation>%1은 %2로 이동 했습니다.</translation>
+        <translation>%1이(가) %2에게 이동했습니다.</translation>
     </message>
     <message>
         <source>%1 moved to %2 by %3.</source>
-        <translation>%1은 %3에 의해 %2로 이동 합니다.</translation>
+        <translation>%3이(가) %1을(를) %2에게 이동했습니다.</translation>
     </message>
     <message>
         <source>%1 moved in from %2 by %3.</source>
-        <translation>%1은 %3에 의해 %2으로 부터 이동하게 되었습니다.</translation>
+        <translation>%3이(가) %1을(를) %2에서 이동했습니다.</translation>
     </message>
     <message>
         <source>%1 is now muted and deafened.</source>
-        <translation>%1 발언 금지/청취 금지 상태가 되었습니다.</translation>
+        <translation>%1은(는) 이제 마이크 음소거 및 오디오 음소거가 설정되었습니다.</translation>
     </message>
     <message>
         <source>Your account information can not be verified currently. Please try again later</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 계정 정보를 확인할 수 없습니다. 나중에 다시 시도하세요</translation>
     </message>
     <message>
         <source>Welcome message: %1</source>
@@ -5492,75 +5492,75 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>You were denied %1 privileges in %2.</source>
-        <translation>당신은%2에게%1의 권한을 거부당했습니다.</translation>
+        <translation>%2에서 %1의 권한이 거부되었습니다.</translation>
     </message>
     <message>
         <source>%3 was denied %1 privileges in %2.</source>
-        <translation>%3은%2으로부터%1의 권한이 없습니다.</translation>
+        <translation>%3은(는) %2에서 %1의 권한이 거부되었습니다.</translation>
     </message>
     <message>
         <source>Denied: Cannot modify SuperUser.</source>
-        <translation>거부:SuperUser를 참조할 수 없습니다.</translation>
+        <translation>거부: SuperUser를 수정할 수 없습니다.</translation>
     </message>
     <message>
         <source>Denied: Invalid channel name.</source>
-        <translation>거부:유효하지 않은 채널 이름입니다.</translation>
+        <translation>거부: 잘못된 채널 이름입니다.</translation>
     </message>
     <message>
         <source>Denied: Text message too long.</source>
-        <translation>거부:텍스트 메시지가 너무 깁니다.</translation>
+        <translation>거부: 문자 메시지가 너무 깁니다.</translation>
     </message>
     <message>
         <source>Denied: Operation not permitted in temporary channel.</source>
-        <translation>거부:일시적으로 채널에 허가되지 않는 명령입니다.</translation>
+        <translation>거부: 임시 채널에서는 작업이 허용되지 않습니다.</translation>
     </message>
     <message>
         <source>You need a certificate to perform this operation.</source>
-        <translation>이 조작을 실행하려면 인증서가 필요합니다.</translation>
+        <translation>이 작업을 수행하려면 인증서가 필요합니다.</translation>
     </message>
     <message>
         <source>%1 does not have a certificate.</source>
-        <translation>%1은 인증서를 가지고 있지 않습니다.</translation>
+        <translation>%1은(는) 인증서가 없습니다.</translation>
     </message>
     <message>
         <source>Invalid username: %1.</source>
-        <translation>없는 유저 이름 입니다: %1.</translation>
+        <translation>잘못된 유저 이름: %1.</translation>
     </message>
     <message>
         <source>Invalid username.</source>
-        <translation>없는 유저 이름 입니다.</translation>
+        <translation>유저 이름이 잘못되었습니다.</translation>
     </message>
     <message>
         <source>Channel is full.</source>
-        <translation>채널에 더이상 들어 갈수 없습니다.</translation>
+        <translation>채널이 꽉 찼습니다.</translation>
     </message>
     <message>
         <source>Channel nesting limit reached.</source>
-        <translation>채널 중첩 제한에 이르렀습니다.</translation>
+        <translation>채널 중첩 한계에 도달했습니다.</translation>
     </message>
     <message>
         <source>Channel count limit reached. Need to delete channels before creating new ones.</source>
-        <translation type="unfinished"></translation>
+        <translation>채널 수 제한에 도달했습니다. 새 채널을 만들기 전에 채널을 삭제해야 합니다.</translation>
     </message>
     <message>
         <source>Permission denied.</source>
-        <translation>권한이 없습니다.</translation>
+        <translation>권한이 거부되었습니다.</translation>
     </message>
     <message>
         <source>%1 connected and entered channel.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1이(가) 연결되고 채널에 입장했습니다.</translation>
     </message>
     <message>
         <source>%1 connected.</source>
-        <translation>%1 접속 했습니다.</translation>
+        <translation>%1이(가) 연결되었습니다.</translation>
     </message>
     <message>
         <source>%1 is now muted.</source>
-        <translation>%1 발언 금지 상태가 되었습니다.</translation>
+        <translation>%1은 이제 마이크 음소거가 설정되었습니다.</translation>
     </message>
     <message>
         <source>%1 is now unmuted.</source>
-        <translation>%1의 발언 금지 상태가 해제되었습니다.</translation>
+        <translation>%1은 이제 마이크 음소거가 해제되었습니다.</translation>
     </message>
     <message>
         <source>Recording started</source>
@@ -5572,11 +5572,11 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>%1 started recording.</source>
-        <translation>%1이 녹음을 개시했습니다.</translation>
+        <translation>%1이(가) 녹음을 시작했습니다.</translation>
     </message>
     <message>
         <source>%1 stopped recording.</source>
-        <translation>%1이 녹음을 중지했습니다.</translation>
+        <translation>%1이(가) 녹음을 중지했습니다.</translation>
     </message>
     <message>
         <source>You revoked your priority speaker status.</source>
@@ -5584,84 +5584,84 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>You assumed priority speaker status.</source>
-        <translation>우선 발언자 상태를 가정했습니다.</translation>
+        <translation>우선 발언자 상태를 설정했습니다.</translation>
     </message>
     <message>
         <source>%1 revoked your priority speaker status.</source>
-        <translation>%1이(가) 우선 발언자 상태를 취소했습니다.</translation>
+        <translation>%1이(가) 나의 우선 발언자 상태를 취소했습니다.</translation>
     </message>
     <message>
         <source>%1 gave you priority speaker status.</source>
-        <translation>%1이(가) 우선 발언자 상태를 지정했습니다.</translation>
+        <translation>%1이(가) 나의 우선 발언자 상태를 설정했습니다.</translation>
     </message>
     <message>
         <source>You revoked priority speaker status for %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1의 우선 발언자 상태를 취소했습니다.</translation>
     </message>
     <message>
         <source>You gave priority speaker status to %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1의 우선 발언자 상태를 설정했습니다.</translation>
     </message>
     <message>
         <source>%1 revoked own priority speaker status.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1이(가) 자신의 우선 발언자 상태를 취소했습니다.</translation>
     </message>
     <message>
         <source>%1 assumed priority speaker status.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1이(가) 자신의 우선 발언자 상태를 설정했습니다.</translation>
     </message>
     <message>
         <source>%1 revoked priority speaker status for %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1이(가) %2의 우선 발언자 상태를 취소했습니다.</translation>
     </message>
     <message>
         <source>%1 gave priority speaker status to %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1이(가) %2의 우선 발언자 상태를 설정했습니다.</translation>
     </message>
     <message>
         <source>You were unmuted and undeafened by %1.</source>
-        <translation>%1이 당신의 발언·청취를 금지했습니다.</translation>
+        <translation>%1이(가) 나의 마이크 및 오디오 음소거를 해제했습니다.</translation>
     </message>
     <message>
         <source>You were muted by %1.</source>
-        <translation>%1이 당신의 발언을 금지 했습니다.</translation>
+        <translation>%1이(가) 나의 마이크 음소거를 설정했습니다.</translation>
     </message>
     <message>
         <source>You were undeafened by %1.</source>
-        <translation>%1이 당신의 청취 금지를 해제했습니다.</translation>
+        <translation>%1이(가) 나의 오디오 음소거를 해제했습니다.</translation>
     </message>
     <message>
         <source>You were suppressed.</source>
         <oldsource>You were suppressed by %1.</oldsource>
-        <translation>당신의 발언이 금지되었습니다.</translation>
+        <translation>억제를 설정했습니다.</translation>
     </message>
     <message>
         <source>You were unsuppressed.</source>
-        <translation>당신의 발언 금지가 해제되었습니다.</translation>
+        <translation>억제를 취소했습니다.</translation>
     </message>
     <message>
         <source>You were unsuppressed by %1.</source>
-        <translation>당신은%1에 따라 발언 금지가 해제 되었습니다.</translation>
+        <translation>%1이(가) 나의 억제를 취소했습니다.</translation>
     </message>
     <message>
         <source>You joined %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에 입장했습니다.</translation>
     </message>
     <message>
         <source>You moved %1 to %2.</source>
-        <translation>당신은 %1 를 %2로 이동 시켰습니다.</translation>
+        <translation>%1을(를) %2에게 이동했습니다.</translation>
     </message>
     <message>
         <source>%1 is recording</source>
-        <translation>%1은 녹음하고 있습니다</translation>
+        <translation>%1이(가) 녹음 중입니다</translation>
     </message>
     <message>
         <source>%1 renamed to %2 by %3.</source>
-        <translation type="unfinished"></translation>
+        <translation>%3이(가) %1의 이름을 %2(으)로 변경했습니다.</translation>
     </message>
     <message>
         <source>%1 disconnected.</source>
-        <translation>%1 접속 종료 했습니다.</translation>
+        <translation>%1이(가) 연결이 종료되었습니다.</translation>
     </message>
     <message>
         <source>Server</source>
@@ -5670,104 +5670,104 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Failed to load Opus, it will not be available for audio encoding/decoding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Opus를 로드하지 못했습니다. 오디오 인코딩/디코딩에 사용할 수 없습니다.</translation>
     </message>
     <message>
         <source>The server requests minimum client version %1</source>
-        <translation type="unfinished"></translation>
+        <translation>서버가 최소 클라이언트 버전 %1을(를) 요청</translation>
     </message>
     <message>
         <source>The server requests positional audio be enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버가 위치 오디오 활성화를 요청합니다.</translation>
     </message>
     <message>
         <source>The server requests positional audio be disabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버가 위치 오디오 비활성화를 요청합니다.</translation>
     </message>
     <message>
         <source>The server requests Push-to-Talk be enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버가 눌러서-말하기 활성화를 요청합니다.</translation>
     </message>
     <message>
         <source>The server requests Push-to-Talk be disabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버가 눌러서-말하기 비활성화를 요청합니다.</translation>
     </message>
     <message>
         <source>You were unmuted by %1.</source>
-        <translation>%1가 당신의 발언 금지를 해제 하였습니다.</translation>
+        <translation>%1이(가) 나의 마이크 음소거를 해제했습니다.</translation>
     </message>
     <message>
         <source>You muted %1.</source>
-        <translation>당신은 %1의 발언을 금지했습니다.</translation>
+        <translation>%1의 마이크 음소거를 설정했습니다.</translation>
     </message>
     <message>
         <source>You unsuppressed %1.</source>
-        <translation>당신은 %1의 발언을 해제 했습니다.</translation>
+        <translation>%1의 억제를 해제했습니다.</translation>
     </message>
     <message>
         <source>You unmuted %1.</source>
-        <translation>당신은 %1의 발언 금지를 해제했습니다.</translation>
+        <translation>%1의 마이크 음소거를 해제했습니다.</translation>
     </message>
     <message>
         <source>%1 muted by %2.</source>
-        <translation>%2가 %1의 발언을 금지했습니다.</translation>
+        <translation>%2이(가) %1의 마이크 음소거를 설정했습니다.</translation>
     </message>
     <message>
         <source>%1 unsuppressed by %2.</source>
-        <translation>%1가 %2으로부터 발언 금지를 해제 하였습니다.</translation>
+        <translation>%2이(가) %1의 억제를 해제했습니다.</translation>
     </message>
     <message>
         <source>%1 unmuted by %2.</source>
-        <translation>%1은 %2으로부터 발언 금지 해제 되었습니다.</translation>
+        <translation>%2이(가) %1의 마이크 음소거를 해제했습니다.</translation>
     </message>
     <message>
         <source>Unable to find matching CELT codecs with other clients. You will not be able to talk to all users.</source>
-        <translation>다른 클라이언트와 매치된 CELT코덱이 발견되지 않습니다. 당신은 모든 유저에게 말을 할수 없습니다.</translation>
+        <translation>다른 클라이언트와 일치하는 CELT 코덱을 찾을 수 없습니다. 모든 유저와 대화할 수 없습니다.</translation>
     </message>
     <message>
         <source>You were muted and deafened by %1.</source>
         <oldsource>You were deafened by %1.</oldsource>
-        <translation>%1이 당신의 청취을 금지했습니다.</translation>
+        <translation>%1이(가) 나의 마이크 및 오디오 음소거를 설정했습니다.</translation>
     </message>
     <message>
         <source>You were kicked from the server by %1: %2.</source>
-        <translation>당신은%1에 의해 서버부터 강퇴 되었습니다.%2.</translation>
+        <translation>%1이(가) 서버에서 추방했습니다: %2.</translation>
     </message>
     <message>
         <source>%3 was kicked from the server by %1: %2.</source>
-        <translation>%3은%1에 의해 서버부터 강퇴 되었습니다.%2.</translation>
+        <translation>%1이(가) %3을(를) 서버에서 추방했습니다: %2.</translation>
     </message>
     <message>
         <source>You were kicked and banned from the server by %1: %2.</source>
-        <translation>당신은%1에 의해 강퇴되어 서버에서 제명 되었습니다.%2.</translation>
+        <translation>%1이(가) 서버에서 추방 및 차단했습니다: %2.</translation>
     </message>
     <message>
         <source>%3 was kicked and banned from the server by %1: %2.</source>
-        <translation>%3은%1에 의해 강퇴되어 서버에서 제명 되었습니다.%2.</translation>
+        <translation>%1이(가) %3을(를) 서버에서 추방 및 차단했습니다: %2.</translation>
     </message>
     <message>
         <source>You were moved to %1 by %2.</source>
-        <translation>%2가 당신을 %1로 이동 시켰습니다.</translation>
+        <translation>%2이(가) %1에게 이동했습니다.</translation>
     </message>
     <message>
         <source>%1 entered channel.</source>
-        <translation>%1 채널에 입장 했습니다.</translation>
+        <translation>%1 채널에 입장했습니다.</translation>
     </message>
     <message>
         <source>Server connection rejected: %1.</source>
-        <translation>서버 접속을 거부당했습니다:%1.</translation>
+        <translation>서버 연결이 거부되었습니다: %1.</translation>
     </message>
     <message>
         <source>Denied: %1.</source>
-        <translation>거부당했습니다:%1.</translation>
+        <translation>거부되었습니다: %1.</translation>
     </message>
     <message>
         <source>%1 renamed to %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1의 이름이 %2(으)로 변경되었습니다.</translation>
     </message>
     <message>
         <source>%1 left channel and disconnected.</source>
-        <translation>%1 채널 및 서버를 접속 종료 하였습니다.</translation>
+        <translation>%1이(가) 채널 퇴장 및 연결 종료가 되었습니다.</translation>
     </message>
     <message>
         <source>Message from %1</source>
@@ -5775,21 +5775,23 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>You have User Dragging set to &quot;Do Nothing&quot; so the user wasn&apos;t moved.</source>
-        <translation type="unfinished"></translation>
+        <translation>유저를 이동하지 않도록 유저 드래그가 &quot;아무것도 안 함&quot;으로 설정되어 있습니다.</translation>
     </message>
     <message>
         <source>You have Channel Dragging set to &quot;Do Nothing&quot; so the channel wasn&apos;t moved.</source>
-        <translation>채널이 이동되지 않도록 채널 끌기가 &quot;아무것도 안 함&quot;으로 설정되어 있습니다.</translation>
+        <translation>채널을 이동하지 않도록 채널 드래그가 &quot;아무것도 안 함&quot;으로 설정되어 있습니다.</translation>
     </message>
     <message>
         <source>Unknown Channel Drag mode in UserModel::dropMimeData.</source>
-        <translation>UserModel;dropMimeData 불분명한 채널 D모드입니다.</translation>
+        <translation>UserModel::dropMimeData에서 알 수 없는 채널 드래그 모드입니다.</translation>
     </message>
     <message>
         <source>Remote controlling Mumble:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>원격 제어 Mumble
+
+</translation>
     </message>
     <message>
         <source>Invocation</source>
@@ -5797,7 +5799,7 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Error: No RPC command specified</source>
-        <translation type="unfinished"></translation>
+        <translation>오류: RPC 명령이 지정되지 않음</translation>
     </message>
     <message>
         <source>RPC</source>
@@ -5809,19 +5811,19 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Skipping version check in debug mode.</source>
-        <translation>디버깅 모드에서는 버전 확인을 스킵 합니다.</translation>
+        <translation>디버그 모드에서 버전 확인을 건너뜁니다.</translation>
     </message>
     <message>
         <source>Hide Frame</source>
-        <translation>프레임을 숨깁니다.</translation>
+        <translation>프레임 숨기기</translation>
     </message>
     <message>
         <source>Toggle showing frame on minimal window</source>
-        <translation>작게 표시했을 때에 프레임을 보일지 안 보일지를 바꿉니다</translation>
+        <translation>최소 창에 프레임 표시 전환</translation>
     </message>
     <message>
         <source>This will toggle whether the minimal window should have a frame for moving and resizing.</source>
-        <translation>작게 표시했을 때 이동과 크기 변경을 위해 프레임을 표시할지 말지 바꿉니다.</translation>
+        <translation>최소 창에 이동 및 크기 조정을 위한 프레임이 있어야 하는지 여부를 전환합니다.</translation>
     </message>
     <message>
         <source>&amp;Unlink All</source>
@@ -5829,7 +5831,7 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Reset the comment of the selected user.</source>
-        <translation>선택한 사용자의 코멘트를 리셋 한다.</translation>
+        <translation>선택한 유저의 댓글을 재설정합니다.</translation>
     </message>
     <message>
         <source>&amp;Join Channel</source>
@@ -5837,11 +5839,11 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>View comment in editor</source>
-        <translation>에디터에서 코멘트를 봅니다</translation>
+        <translation>편집기에서 댓글보기</translation>
     </message>
     <message>
         <source>Query server for connection information for user</source>
-        <translation>사용자 접속 정보를 위한 쿼리.</translation>
+        <translation>서버에 유저의 연결 정보 조회</translation>
     </message>
     <message>
         <source>S&amp;erver</source>
@@ -5857,11 +5859,11 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Register yourself on the server</source>
-        <translation>서버에 당신을 등록 합니다.</translation>
+        <translation>서버에 등록</translation>
     </message>
     <message>
         <source>Change your avatar image on this server</source>
-        <translation>서버에 당신의 아바타 이미지를 변경 합니다</translation>
+        <translation>이 서버에서 아바타 이미지 변경</translation>
     </message>
     <message>
         <source>&amp;Remove Avatar</source>
@@ -5869,7 +5871,7 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Remove currently defined avatar image.</source>
-        <translation>현재 설정되어 있는 아바타 이미지를 삭제합니다.</translation>
+        <translation>현재 설정된 아바타 이미지를 삭제합니다.</translation>
     </message>
     <message>
         <source>Icon Toolbar</source>
@@ -5877,7 +5879,7 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Change your own comment</source>
-        <translation>자신의 코멘트를 변경</translation>
+        <translation>자신의 댓글 변경</translation>
     </message>
     <message>
         <source>Recording</source>
@@ -5885,7 +5887,7 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Priority Speaker</source>
-        <translation>우선도 스피커</translation>
+        <translation>우선 발언자</translation>
     </message>
     <message>
         <source>&amp;Copy URL</source>
@@ -5893,7 +5895,7 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Copies a link to this channel to the clipboard.</source>
-        <translation>클립 보드에 이 채널의 링크를 복사합니다.</translation>
+        <translation>이 채널에 대한 링크를 클립보드에 복사합니다.</translation>
     </message>
     <message>
         <source>Ignore Messages</source>
@@ -5901,19 +5903,19 @@ Otherwise abort and check your certificate and username.</source>
     </message>
     <message>
         <source>Locally ignore user&apos;s text chat messages.</source>
-        <translation>사용자의 텍스트 채팅 메시지를 로컬에서 무시합니다.</translation>
+        <translation>유저의 문자 채팅 메시지를 로컬에서 무시합니다.</translation>
     </message>
     <message>
         <source>Silently drops all text messages from the user.</source>
-        <translation>유저로부터의 모든 메시지를 통보 없이 무시합니다.</translation>
+        <translation>유저의 모든 문자 메시지를 자동으로 삭제합니다.</translation>
     </message>
     <message>
         <source>Edit ban list on server</source>
-        <translation type="unfinished"></translation>
+        <translation>서버에서 차단 목록 편집</translation>
     </message>
     <message>
         <source>This lets you edit the server-side IP ban list.</source>
-        <translation type="unfinished"></translation>
+        <translation>서버 측 IP 차단 목록을 편집할 수 있습니다.</translation>
     </message>
     <message>
         <source>&amp;Filter on/off</source>
@@ -5924,7 +5926,10 @@ Otherwise abort and check your certificate and username.</source>
 By default all empty channels will be filtered.
 You can mark additional channels for filtering from
 the channel&apos;s context menu.</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 채널의 필터링을 활성화하거나 비활성화합니다.
+기본적으로 모든 빈 채널이 필터링됩니다.
+채널의 콘텍스트 메뉴에서 필터링에
+추가 채널을 표시 할 수 있습니다.</translation>
     </message>
     <message>
         <source>Ctrl+F</source>
@@ -5940,7 +5945,7 @@ the channel&apos;s context menu.</source>
     </message>
     <message>
         <source>Locally adjust the user&apos;s speech volume.</source>
-        <translation>유저의 음성 볼륨을 로컬에서 조정합니다.</translation>
+        <translation>유저의 음성 볼륨을 로컬에서 조절합니다.</translation>
     </message>
     <message>
         <source>Opens a dialog with a volume slider. Use this on other users in the same room.</source>
@@ -5956,19 +5961,19 @@ the channel&apos;s context menu.</source>
     </message>
     <message>
         <source>Hides the main Mumble window.</source>
-        <translation type="unfinished"></translation>
+        <translation>메인 Mumble 창을 숨깁니다.</translation>
     </message>
     <message>
         <source>Hides the main Mumble window. Restore by clicking on the tray icon or starting Mumble again.</source>
-        <translation type="unfinished"></translation>
+        <translation>메인 Mumble 창을 숨깁니다. 트레이 아이콘을 클릭하거나 Mumble을 다시 시작하여 복원합니다.</translation>
     </message>
     <message>
         <source>Show the Developer Console</source>
-        <translation type="unfinished"></translation>
+        <translation>개발자 콘솔 표시</translation>
     </message>
     <message>
         <source>Shows the Mumble Developer Console, where Mumble&apos;s log output can be inspected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mumble의 로그 출력을 검사할 수 있는 Mumble 개발자 콘솔을 표시합니다.</translation>
     </message>
     <message>
         <source>&amp;Connect...</source>
@@ -6080,7 +6085,7 @@ the channel&apos;s context menu.</source>
     </message>
     <message>
         <source>Show</source>
-        <translation>보여주다</translation>
+        <translation>보기</translation>
     </message>
     <message>
         <source>Shows the main Mumble window.</source>
@@ -6092,15 +6097,15 @@ the channel&apos;s context menu.</source>
     </message>
     <message>
         <source>Protocol violation. Server sent remove for occupied channel.</source>
-        <translation>프로토콜 위반입니다. 서버가 점유 채널에 대해 제거를 보냈습니다.</translation>
+        <translation>프로토콜 위반입니다. 서버가 점유 채널의 삭제를 보냈습니다.</translation>
     </message>
     <message>
         <source>Listen to channel</source>
-        <translation>채널 청취</translation>
+        <translation>채널 듣기</translation>
     </message>
     <message>
         <source>Listen to this channel without joining it</source>
-        <translation>이 채널에 입장하지 않고 청취</translation>
+        <translation>채널에 입장하지 않고 듣기</translation>
     </message>
     <message>
         <source>Locally adjust the volume for this virtual ear.</source>
@@ -6116,7 +6121,7 @@ the channel&apos;s context menu.</source>
     </message>
     <message>
         <source>Unable to %1 into %2 - Adding the respective access (password) token might grant you access.</source>
-        <translation type="unfinished"></translation>
+        <translation>%2에 대한 %1을(를) 할 수 없습니다. 각 접근(비밀번호) 토큰을 추가하면 접근 권한이 부여될 수 있습니다.</translation>
     </message>
     <message>
         <source>No more listeners allowed in this channel.</source>
@@ -6128,19 +6133,19 @@ the channel&apos;s context menu.</source>
     </message>
     <message>
         <source>You started listening to %1</source>
-        <translation>%1을(를) 듣기 시작했습니다</translation>
+        <translation>%1을(를) 듣기를 시작했습니다</translation>
     </message>
     <message>
         <source>%1 started listening to your channel</source>
-        <translation>%1이(가) 채널 수신을 시작했습니다</translation>
+        <translation>%1이(가) 채널 듣기를 시작했습니다</translation>
     </message>
     <message>
         <source>You stopped listening to %1</source>
-        <translation>%1 수신을 중지했습니다</translation>
+        <translation>%1을(를) 듣기를 중지했습니다</translation>
     </message>
     <message>
         <source>%1 stopped listening to your channel</source>
-        <translation>%1이(가) 채널 수신을 중지했습니다</translation>
+        <translation>%1이(가) 채널 듣기를 중지했습니다</translation>
     </message>
     <message>
         <source>Talking UI</source>
@@ -6148,15 +6153,15 @@ the channel&apos;s context menu.</source>
     </message>
     <message>
         <source>Toggles the visibility of the TalkingUI.</source>
-        <translation>대화 UI의 표시 여부를 전환합니다.</translation>
+        <translation>대화 UI의 가시성을 전환합니다.</translation>
     </message>
     <message>
         <source>Join user&apos;s channel</source>
-        <translation>유저 채널 입장</translation>
+        <translation>유저의 채널에 입장</translation>
     </message>
     <message>
         <source>Joins the channel of this user.</source>
-        <translation>이 유저의 채널에 입장합니다.</translation>
+        <translation>유저의 채널에 입장합니다.</translation>
     </message>
     <message>
         <source>Channels and users</source>
@@ -6176,15 +6181,15 @@ the channel&apos;s context menu.</source>
     </message>
     <message>
         <source>Locally disable Text-To-Speech for this user&apos;s text chat messages.</source>
-        <translation>이 사용자의 텍스트 대화 메시지에 대해 텍스트-음성-변환을 로컬에서 비활성화합니다.</translation>
+        <translation>유저의 문자 채팅 메시지의 텍스트-음성-변환을 로컬에서 비활성화합니다.</translation>
     </message>
     <message>
         <source>Silently disables Text-To-Speech for all text messages from the user.</source>
-        <translation>유저의 모든 문자 메시지에 대해 자동으로 텍스트-음성-변환 기능을 비활성화합니다.</translation>
+        <translation>유저의 모든 문자 메시지의 텍스트-음성-변환 기능을 자동으로 비활성화합니다.</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>목록</translation>
     </message>
     <message>
         <source>Channel</source>
@@ -6318,89 +6323,90 @@ Valid options are:
     <message>
         <source>Directory %1 does not exist.
 </source>
-        <translation type="unfinished"></translation>
+        <translation>%1 디렉터리가 없습니다.
+</translation>
     </message>
     <message>
         <source>Toggle TalkingUI</source>
         <comment>Global shortcut</comment>
-        <translation type="unfinished"></translation>
+        <translation>대화 UI 전환</translation>
     </message>
     <message>
         <source>Toggles the visibility of the TalkingUI.</source>
         <comment>Global Shortcut</comment>
-        <translation type="unfinished">대화 UI의 표시 여부를 전환합니다.</translation>
+        <translation>대화 UI의 가시성을 전환합니다.</translation>
     </message>
     <message>
         <source>Toggle the channel filter (Alt+F)</source>
-        <translation type="unfinished"></translation>
+        <translation>채널 필터 전환 (Alt+F)</translation>
     </message>
     <message>
         <source>Alt+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+F</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished">검색</translation>
+        <translation>검색</translation>
     </message>
     <message>
         <source>Search for a user or channel (Ctrl+F)</source>
-        <translation type="unfinished"></translation>
+        <translation>유저 또는 채널 검색 (Ctrl+F)</translation>
     </message>
     <message>
         <source>Toggle search dialog</source>
         <comment>Global Shortcut</comment>
-        <translation type="unfinished"></translation>
+        <translation>검색 대화 상자 전환</translation>
     </message>
     <message>
         <source>This will open or close the search dialog depending on whether it is currently opened already</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 열려 있는지에 따라 검색 대화 상자를 열거나 닫습니다</translation>
     </message>
 </context>
 <context>
     <name>Manual</name>
     <message>
         <source>Manual Mumble Positional Audio</source>
-        <translation type="unfinished"></translation>
+        <translation>수동 Mumble 위치 오디오</translation>
     </message>
     <message>
         <source>Position</source>
-        <translation type="unfinished">포지션</translation>
+        <translation>위치</translation>
     </message>
     <message>
         <source>X</source>
-        <translation type="unfinished"></translation>
+        <translation>X</translation>
     </message>
     <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>Y</translation>
     </message>
     <message>
         <source>Z</source>
-        <translation type="unfinished"></translation>
+        <translation>Z</translation>
     </message>
     <message>
         <source>m</source>
-        <translation type="unfinished"></translation>
+        <translation>m</translation>
     </message>
     <message>
         <source>Heading</source>
-        <translation type="unfinished"></translation>
+        <translation>방향</translation>
     </message>
     <message>
         <source>Azimuth</source>
-        <translation type="unfinished"></translation>
+        <translation>방위각</translation>
     </message>
     <message>
         <source>Elevation</source>
-        <translation type="unfinished"></translation>
+        <translation>표고</translation>
     </message>
     <message>
         <source>°</source>
-        <translation type="unfinished"></translation>
+        <translation>°</translation>
     </message>
     <message>
         <source>Meta data</source>
-        <translation type="unfinished"></translation>
+        <translation>메타 데이터</translation>
     </message>
     <message>
         <source>Context</source>
@@ -6408,39 +6414,39 @@ Valid options are:
     </message>
     <message>
         <source>Identity</source>
-        <translation type="unfinished"></translation>
+        <translation>정체성</translation>
     </message>
     <message>
         <source>Set</source>
-        <translation type="unfinished"></translation>
+        <translation>설정</translation>
     </message>
     <message>
         <source>State</source>
-        <translation type="unfinished">상태</translation>
+        <translation>상태</translation>
     </message>
     <message>
         <source>Unhinge</source>
-        <translation type="unfinished"></translation>
+        <translation>분리</translation>
     </message>
     <message>
         <source>Link</source>
-        <translation type="unfinished"></translation>
+        <translation>링크</translation>
     </message>
     <message>
         <source>Activate</source>
-        <translation type="unfinished"></translation>
+        <translation>활성화</translation>
     </message>
     <message>
         <source>Display</source>
-        <translation type="unfinished">표시</translation>
+        <translation>표시</translation>
     </message>
     <message>
         <source>How long silent user&apos;s positions should stay marked after they have stopped talking (in seconds).</source>
-        <translation type="unfinished"></translation>
+        <translation>대화를 중단한 후 침묵한 유저의 위치 표시를 유지하는 시간입니다(초).</translation>
     </message>
     <message>
         <source>Silent user displaytime:</source>
-        <translation type="unfinished"></translation>
+        <translation>침묵한 유저 표시 시간:</translation>
     </message>
 </context>
 <context>
@@ -6456,23 +6462,23 @@ Valid options are:
     <message>
         <source>Use TCP compatibility mode</source>
         <oldsource>Use TCP compatability mode</oldsource>
-        <translation>TCP 호환 모드를 사용한다.</translation>
+        <translation>TCP 호환 모드 사용</translation>
     </message>
     <message>
         <source>&lt;b&gt;Enable TCP compatibility mode&lt;/b&gt;.&lt;br /&gt;This will make Mumble use only TCP when communicating with the server. This will increase overhead and cause lost packets to produce noticeable pauses in communication, so this should only be used if you are unable to use the default (which uses UDP for voice and TCP for control).</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;TCP 호환 모드 활성화&lt;/b&gt;&lt;br /&gt;Mumble이 서버와 통신할 때 TCP만 사용합니다. 오버헤드가 증가하고 손실된 패킷으로 인해 통신에서 현저한 멈춤이 발생하므로 기본값(음성에는 UDP를 사용하고 제어에는 TCP를 사용)을 사용할 수 없는 경우에만 사용해야 합니다.</translation>
     </message>
     <message>
         <source>Reconnect when disconnected</source>
-        <translation>연결 해제 시에 재접속을 시도합니다</translation>
+        <translation>연결이 끊어지면 다시 연결</translation>
     </message>
     <message>
         <source>&lt;b&gt;Reconnect when disconnected&lt;/b&gt;.&lt;br /&gt;This will make Mumble try to automatically reconnect after 10 seconds if your server connection fails.</source>
-        <translation>&lt;b&gt;연결 해제시 재접속을 시도합니다.&lt;/b&gt;&lt;br/&gt;이 설정을 하면 서버로의 접속이 실패했을 때, 10초 후에 다시 접속을 실시합니다.</translation>
+        <translation>&lt;b&gt;연결이 끊어지면 다시 연결&lt;/b&gt;&lt;br /&gt;서버 연결이 실패하면 Mumble이 10초 후에 자동으로 다시 연결을 시도합니다.</translation>
     </message>
     <message>
         <source>Reconnect automatically</source>
-        <translation>재연결을 자동적으로 설정한다.</translation>
+        <translation>자동으로 다시 연결</translation>
     </message>
     <message>
         <source>Proxy</source>
@@ -6480,11 +6486,11 @@ Valid options are:
     </message>
     <message>
         <source>Type</source>
-        <translation>타입</translation>
+        <translation>유형</translation>
     </message>
     <message>
         <source>Type of proxy to connect through</source>
-        <translation>프록시 접속 타입</translation>
+        <translation>연결할 프록시 유형</translation>
     </message>
     <message>
         <source>Direct connection</source>
@@ -6492,11 +6498,11 @@ Valid options are:
     </message>
     <message>
         <source>HTTP(S) proxy</source>
-        <translation>HTTP(S) proxy</translation>
+        <translation>HTTP(S) 프록시</translation>
     </message>
     <message>
         <source>SOCKS5 proxy</source>
-        <translation>SOCKS5 proxy</translation>
+        <translation>SOCKS5 프록시</translation>
     </message>
     <message>
         <source>Hostname</source>
@@ -6504,7 +6510,7 @@ Valid options are:
     </message>
     <message>
         <source>Hostname of the proxy</source>
-        <translation>프록시 호스트 이름</translation>
+        <translation>프록시의 호스트 이름</translation>
     </message>
     <message>
         <source>Force TCP mode</source>
@@ -6512,35 +6518,35 @@ Valid options are:
     </message>
     <message>
         <source>Enable QoS to prioritize packets</source>
-        <translation>우선 순위자 패킷 때문에 QoS를 활성화</translation>
+        <translation>QoS를 활성화하여 패킷 우선 순위 지정</translation>
     </message>
     <message>
         <source>This will enable QoS, which will attempt to prioritize voice packets over other traffic.</source>
-        <translation>QoS를 설정합니다. QoS외의 통신 트래픽보다 음성 패킷의 우선 순위를 올립니다.</translation>
+        <translation>QoS가 활성화되며, 다른 트래픽보다 음성 패킷의 우선 순위를 지정하려고 시도합니다.</translation>
     </message>
     <message>
         <source>Use Quality of Service</source>
-        <translation>Quality of Service를 사용한다.</translation>
+        <translation>서비스 품질(QoS) 사용</translation>
     </message>
     <message>
         <source>Don&apos;t send certificate to server and don&apos;t save passwords. (Not saved).</source>
-        <translation>서버에 증명서를 보내지 않고 비밀 번호도 저장하지 않는다. (저장X)</translation>
+        <translation>인증서를 서버로 보내지 않고 비밀번호를 저장하지 않습니다. (저장되지 않음).</translation>
     </message>
     <message>
         <source>&lt;b&gt;This will suppress identity information from the client.&lt;/b&gt;&lt;p&gt;The client will not identify itself with a certificate, even if defined, and will not cache passwords for connections. This is primarily a test-option and is not saved.&lt;/p&gt;</source>
-        <translation>&lt;b&gt;클라이언트 개인 정보의 송신을 억제합니다.&lt;/b&gt;&lt;p&gt;클라이언트 증명서를 사용하지 않고 접속을 위한 패스워드를 저장하지 않습니다. 이는 테스트 옵션에서 설정한 설정은 저장되지 않습니다.&lt;/p&gt;</translation>
+        <translation>&lt;b&gt;클라이언트의 정보를 숨깁니다.&lt;/b&gt;&lt;p&gt;클라이언트는 정의된 경우에도 인증서로 자신을 식별하지 않으며 연결에 대한 비밀번호를 저장하지 않습니다. 이 옵션은 주로 테스트 옵션이며 저장되지 않습니다.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Suppress certificate and password storage</source>
-        <translation>증명서와 패스워드의 저장을 하지 않는다.</translation>
+        <translation>인증서 및 비밀번호 저장 금지</translation>
     </message>
     <message>
         <source>&lt;b&gt;Type of proxy to connect through.&lt;/b&gt;&lt;br /&gt;This makes Mumble connect through a proxy for all outgoing connections. Note: Proxy tunneling forces Mumble into TCP compatibility mode, causing all voice data to be sent via the control channel.</source>
-        <translation>&lt;b&gt;프록시 접속 타입.&lt;/b&gt;&lt;br/&gt;프록시를 통해 외부와의 접속을 하도록 합니다. 주의:프록시 접속을 할 경우 강제로 TCP호환 모드로 변경됩니다. 모든 음성 데이터는 관리 채널을 통해 송신되게 됩니다.</translation>
+        <translation>&lt;b&gt;연결할 프록시 유형입니다.&lt;/b&gt;&lt;br /&gt;Mumble이 모든 송신 연결을 프록시를 통해 연결합니다. 참고: 프록시 터널링은 Mumble을 TCP 호환 모드로 강제 전환하여 모든 음성 데이터가 제어 채널을 통해 전송되도록 합니다.</translation>
     </message>
     <message>
         <source>&lt;b&gt;Hostname of the proxy.&lt;/b&gt;&lt;br /&gt;This field specifies the hostname of the proxy you wish to tunnel network traffic through.</source>
-        <translation>&lt;b&gt;프록시 호스트 이름&lt;/b&gt;&lt;br/&gt;이 필드에 네트워크 트래픽을 통과 시킬 프록시 서버의 호스트명을 설정합니다.</translation>
+        <translation>&lt;b&gt;프록시의 호스트 이름입니다.&lt;/b&gt;&lt;br /&gt;이 필드는 네트워크 트래픽을 터널링할 프록시의 호스트 이름을 지정합니다.</translation>
     </message>
     <message>
         <source>Port</source>
@@ -6548,23 +6554,23 @@ Valid options are:
     </message>
     <message>
         <source>Port number of the proxy</source>
-        <translation>프록시 포트 번호</translation>
+        <translation>프록시의 포트 번호</translation>
     </message>
     <message>
         <source>&lt;b&gt;Port number of the proxy.&lt;/b&gt;&lt;br /&gt;This field specifies the port number that the proxy expects connections on.</source>
-        <translation>&lt;b&gt;프록시 포트 번호&lt;/b&gt;&lt;br/&gt;프록시 접속에 사용하는 포토 번호를 지정합니다.</translation>
+        <translation>&lt;b&gt;프록시의 포트 번호입니다.&lt;/b&gt;&lt;br /&gt;이 필드는 프록시가 연결을 요구하는 포트 번호를 지정합니다.</translation>
     </message>
     <message>
         <source>Username</source>
-        <translation>유저이름</translation>
+        <translation>유저 이름</translation>
     </message>
     <message>
         <source>Username for proxy authentication</source>
-        <translation>프록시 인증 사용자 이름</translation>
+        <translation>프록시 인증에 대한 유저 이름</translation>
     </message>
     <message>
         <source>&lt;b&gt;Username for proxy authentication.&lt;/b&gt;&lt;br /&gt;This specifies the username you use for authenticating yourself with the proxy. In case the proxy does not use authentication, or you want to connect anonymously, simply leave this field blank.</source>
-        <translation>&lt;b&gt;프록시 인증 사용자 이름&lt;/b&gt;&lt;br/&gt;프록시 서버 인증에 사용하는 유저명을 지정합니다. 프록시 서버가 인증을 실시하지 않은 경우나, 익명으로 접속하는 경우는 이 필드를 비워 주세요.</translation>
+        <translation>&lt;b&gt;프록시 인증에 대한 유저 이름입니다.&lt;/b&gt;&lt;br /&gt;프록시로 자신을 인증하는 데 사용하는 유저 이름을 지정합니다. 프록시가 인증을 사용하지 않거나 익명으로 연결하려면 이 필드를 공백으로 두세요.</translation>
     </message>
     <message>
         <source>Password</source>
@@ -6572,11 +6578,11 @@ Valid options are:
     </message>
     <message>
         <source>Password for proxy authentication</source>
-        <translation>프록시 인증의 패스워드</translation>
+        <translation>프록시 인증에 대한 비밀번호</translation>
     </message>
     <message>
         <source>&lt;b&gt;Password for proxy authentication.&lt;/b&gt;&lt;br /&gt;This specifies the password you use for authenticating yourself with the proxy. In case the proxy does not use authentication, or you want to connect anonymously, simply leave this field blank.</source>
-        <translation>&lt;b&gt;프록시 인증 패스워드&lt;/b&gt;&lt;br/&gt;프록시 서버의 인증에 사용하는 패스워드를 지정합니다. 프록시 서버가 인증을 받지 않거나 익명으로 접속하는 경우는 이 필드를 비워 주세요.</translation>
+        <translation>&lt;b&gt;프록시 인증에 대한 비밀번호입니다.&lt;/b&gt;&lt;br /&gt;프록시로 자신을 인증하는 데 사용하는 비밀번호를 지정합니다. 프록시가 인증을 사용하지 않거나 익명으로 연결하려면 이 필드를 공백으로 두세요.</translation>
     </message>
     <message>
         <source>Mumble services</source>
@@ -6584,87 +6590,88 @@ Valid options are:
     </message>
     <message>
         <source>Check for new releases of Mumble automatically.</source>
-        <translation>Mumble의 새 릴리스를 자동적으로 확인합니다.</translation>
+        <translation>Mumble의 새 릴리스를 자동으로 확인합니다.</translation>
     </message>
     <message>
         <source>This will check for new releases of Mumble every time you start the program, and notify you if one is available.</source>
-        <translation>프로그램을 시작할 때마다 Mumble의 새 버전을 확인하고, 있다면 확인 합니다.</translation>
+        <translation>프로그램을 시작할 때마다 Mumble의 새 릴리스를 확인하고 사용 가능한 경우 알려줍니다.</translation>
     </message>
     <message>
         <source>Check for application updates on startup</source>
-        <translation>시작시 Mumble의 업데이트을 체크한다</translation>
+        <translation>시작할 때 응용 프로그램 업데이트 확인</translation>
     </message>
     <message>
         <source>Check for new releases of plugins automatically.</source>
-        <translation>플러그인의 새 릴리스를 자동적으로 확인합니다.</translation>
+        <translation>플러그인의 새 릴리스를 자동으로 확인합니다.</translation>
     </message>
     <message>
         <source>This will check for new releases of plugins every time you start the program, and download them automatically.</source>
-        <translation>프로그램이 시작할 때마다 새로운 플러그인을 확인하고 존재하면 자동으로 다운로드한다.</translation>
+        <translation>프로그램을 시작할 때마다 플러그인의 새 릴리스가 확인하고 자동으로 다운로드합니다.</translation>
     </message>
     <message>
         <source>&lt;b&gt;Submit anonymous statistics.&lt;/b&gt;&lt;br /&gt;Mumble has a small development team, and as such needs to focus its development where it is needed most. By submitting a bit of statistics you help the project determine where to focus development.</source>
-        <translation>&lt;b&gt;익명으로 통계 정보를 송신&lt;/b&gt;&lt;br /&gt;Mumble의 개발 팀은 규모가 작기 때문에 당장 필요한 것에 중점을 두어야 합니다. 통계 정보를 송신함으로써 프로젝트에서 사용자가 자주 사용하는 기능이 무엇인지 알고 중점을 어디 둘지를 결정하는 도움이 됩니다.</translation>
+        <translation>&lt;b&gt;익명 통계를 제출합니다.&lt;/b&gt;&lt;br /&gt;Mumble은 소규모 개발팀을 가지고 있으므로 가장 필요한 곳에 개발을 집중해야 합니다. 약간의 통계를 제출하면 프로젝트가 개발에 집중할 위치를 결정하는 데 도움이 됩니다.</translation>
     </message>
     <message>
         <source>Submit anonymous statistics to the Mumble project</source>
-        <translation>Mumble프로젝트에 익명으로 통계를 송신한다.</translation>
+        <translation>Mumble 프로젝트에 익명 통계 제출</translation>
     </message>
     <message>
         <source>Submit anonymous statistics</source>
-        <translation>익명으로 이용 상태를 본다.</translation>
+        <translation>익명 통계 제출</translation>
     </message>
     <message>
         <source>Reconnect to last used server when starting Mumble</source>
-        <translation>Mumble을 시작할 때 마지막으로 쓰던 서버에 다시 접속합니다</translation>
+        <translation>Mumble을 시작할 때 마지막으로 사용한 서버에 다시 연결</translation>
     </message>
     <message>
         <source>Reconnect to last server on startup</source>
-        <translation>시작시 마지막으로 접속한 서버에 다시 접속한다</translation>
+        <translation>시작할 때 마지막 서버에 다시 연결</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation type="unfinished"></translation>
+        <translation>개인정보</translation>
     </message>
     <message>
         <source>Prevent OS information being sent to Mumble servers and web servers</source>
-        <translation type="unfinished"></translation>
+        <translation>Mumble 서버 및 웹 서버로 OS 정보 전송 방지</translation>
     </message>
     <message>
         <source>&lt;b&gt;Don&apos;t send OS information to servers&lt;/b&gt;&lt;br/&gt;
 Prevents the client from sending potentially identifying information about the operating system to the Mumble server and web servers.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;서버에 OS 정보 전송 안 함&lt;/b&gt;&lt;br/&gt;
+클라이언트가 잠재적으로 운영 체제에 대한 식별 정보를 Mumble 서버 및 웹 서버로 보내지 못하도록 합니다.</translation>
     </message>
     <message>
         <source>Do not send OS information to Mumble servers and web servers</source>
-        <translation type="unfinished"></translation>
+        <translation>Mumble 서버 및 웹 서버로 OS 정보 전송 안 함</translation>
     </message>
     <message>
         <source>When toggled this hides the public server list from the connect dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>전환하면 연결 대화 상자에서 공용 서버 목록이 숨겨집니다</translation>
     </message>
     <message>
         <source>Hide public server list</source>
-        <translation type="unfinished"></translation>
+        <translation>공용 서버 목록 숨기기</translation>
     </message>
     <message>
         <source>Check for plugin updates on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>시작할 때 플러그인 업데이트 확인</translation>
     </message>
     <message>
         <source>Automatically download and install plugin updates</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인 업데이트 자동 다운로드 및 설치</translation>
     </message>
 </context>
 <context>
     <name>Overlay</name>
     <message>
         <source>Silent</source>
-        <translation>조용히</translation>
+        <translation>침묵</translation>
     </message>
     <message>
         <source>Talking</source>
-        <translation>대화</translation>
+        <translation>대화 중</translation>
     </message>
     <message>
         <source>Whisper</source>
@@ -6680,7 +6687,7 @@ Prevents the client from sending potentially identifying information about the o
     </message>
     <message>
         <source>Failed to create communication with overlay at %2: %1. No overlay will be available.</source>
-        <translation>오버레이:%2:%1와의 통신 생성에 실패 했습니다. 유효한 오버레이는 없습니다.</translation>
+        <translation>%2에서 오버레이와 통신을 생성하지 못했습니다: %1. 오버레이를 사용할 수 없습니다.</translation>
     </message>
 </context>
 <context>
@@ -6691,27 +6698,27 @@ Prevents the client from sending potentially identifying information about the o
     </message>
     <message>
         <source>Only talking</source>
-        <translation>대화 중인 사람만</translation>
+        <translation>대화 중만</translation>
     </message>
     <message>
         <source>Talking and recently active</source>
-        <translation type="unfinished"></translation>
+        <translation>대화 및 최근 활동</translation>
     </message>
     <message>
         <source>All in current channel</source>
-        <translation>현재 채널에 있는 사람 모두</translation>
+        <translation>현재 채널에서 모두</translation>
     </message>
     <message>
         <source>All in linked channels</source>
-        <translation>링크 중인 채널에 있는 사람 모두</translation>
+        <translation>링크된 채널에서 모두</translation>
     </message>
     <message>
         <source>Always show yourself</source>
-        <translation>자신을 항상 표시한다.</translation>
+        <translation>항상 자신을 표시</translation>
     </message>
     <message>
         <source>Configure recently active time (%1 seconds)...</source>
-        <translation>최근 활동 시간(%1초)을 설정합니다...</translation>
+        <translation>최근 활동 시간 구성 (%1 초)...</translation>
     </message>
     <message>
         <source>Columns</source>
@@ -6719,11 +6726,11 @@ Prevents the client from sending potentially identifying information about the o
     </message>
     <message>
         <source>Sort</source>
-        <translation>종류</translation>
+        <translation>정렬</translation>
     </message>
     <message>
         <source>Alphabetically</source>
-        <translation>알파벳 순</translation>
+        <translation>알파벳순</translation>
     </message>
     <message>
         <source>Last state change</source>
@@ -6731,40 +6738,40 @@ Prevents the client from sending potentially identifying information about the o
     </message>
     <message>
         <source>Edit...</source>
-        <translation>에딧...</translation>
+        <translation>편집...</translation>
     </message>
     <message>
         <source>Reset Zoom</source>
-        <translation>확대 초기화</translation>
+        <translation>줌 재설정</translation>
     </message>
     <message>
         <source>Configure recently active time</source>
-        <translation>최근 활동 시간을 설정합니다.</translation>
+        <translation>최근 활동 시간 구성</translation>
     </message>
     <message>
         <source>Amount of seconds users remain active after talking:</source>
-        <translation type="unfinished"></translation>
+        <translation>대화 후 유저가 활동 상태를 유지하는 시간(초):</translation>
     </message>
 </context>
 <context>
     <name>OverlayConfig</name>
     <message>
         <source>To move the users, drag the little red dot.</source>
-        <translation>사용자를 움직이려면, 작은 붉은 점을 끌어 주세요.</translation>
+        <translation>유저를 이동하려면 작은 빨간색 점을 드래그합니다.</translation>
     </message>
     <message>
         <source>To resize the users, mouse wheel over a user.</source>
         <oldsource>To resize the users, mousewheel over a user.</oldsource>
-        <translation>아바타의 사이즈를 바꾸려면 사용자 위에서 마우스 휠을 움직여 주세요.</translation>
+        <translation>유저 크기를 조절하려면 유저 위에서 마우스 휠을 사용하세요.</translation>
     </message>
     <message>
         <source>For more options, right click a user.</source>
         <oldsource>For more options, rightclick a user.</oldsource>
-        <translation>추가 설정을 하려면 유저 오른쪽 클릭해 주세요.</translation>
+        <translation>유저를 마우스 우클릭하면 추가 옵션을 볼 수 있습니다.</translation>
     </message>
     <message>
         <source>Launcher Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>런처 필터</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -6772,27 +6779,27 @@ Prevents the client from sending potentially identifying information about the o
     </message>
     <message>
         <source>Choose executable</source>
-        <translation>실행 파일을 선택</translation>
+        <translation>실행 파일 선택</translation>
     </message>
     <message>
         <source>Choose application</source>
-        <translation>어플리케이션 선택</translation>
+        <translation>응용 프로그램 선택</translation>
     </message>
     <message>
         <source>Choose path</source>
-        <translation type="unfinished"></translation>
+        <translation>경로 선택</translation>
     </message>
     <message>
         <source>Load Overlay Presets</source>
-        <translation>오버레이 프리셋 불러오기</translation>
+        <translation>오버레이 사전 설정 로드</translation>
     </message>
     <message>
         <source>Mumble overlay presets (*.mumblelay)</source>
-        <translation>Mumble 오버레이 프리셋 (*.mumblelay)</translation>
+        <translation>Mumble 오버레이 사전 설정 (*.mumblelay)</translation>
     </message>
     <message>
         <source>Save Overlay Presets</source>
-        <translation>오버레이 프리셋 저장</translation>
+        <translation>오버레이 사전 설정 저장</translation>
     </message>
     <message>
         <source>Options</source>
@@ -6800,16 +6807,16 @@ Prevents the client from sending potentially identifying information about the o
     </message>
     <message>
         <source>Enable overlay.</source>
-        <translation>오버레이 켜기.</translation>
+        <translation>오버레이를 활성화합니다.</translation>
     </message>
     <message>
         <source>Enable Overlay</source>
-        <translation>오버레이 켜기</translation>
+        <translation>오버레이 활성화</translation>
     </message>
     <message>
         <source>This sets whether the overlay is enabled or not. This setting is only checked when applications are started, so make sure Mumble is running and this option is on before you start the application.&lt;br /&gt;Please note that if you start Mumble after starting the application, or if you disable the overlay while the application is running, there is no safe way to restart the overlay without also restarting the application.</source>
         <oldsource>This sets whether the overlay is enabled or not. This setting is only checked when applications are started, so make sure Mumble is running and this option is on before you start the application.&lt;br /&gt;Please note that if you start the application after starting Mumble, or if you disable the overlay while running, there is no safe way to restart the overlay without also restarting the application.</oldsource>
-        <translation>오버레이를 활성화 할지 아닐지를 설정합니다. 이 설정은 애플리케이션이 시작할 때만 체크됩니다. Mumble이 동작 중, 애플리케이션이 시작하기 전에 이 옵션이 체크 되어 있는지 확인해 주세요.&lt;br/&gt;</translation>
+        <translation>오버레이의 활성화 여부를 설정합니다. 이 설정은 응용 프로그램이 시작될 때만 확인되므로 응용 프로그램을 시작하기 전에 Mumble이 실행 중이고 이 옵션이 켜져 있는지 확인하세요.&lt;br /&gt;응용 프로그램을 시작한 후 Mumble을 시작하거나 응용 프로그램이 실행 중인 동안 오버레이를 비활성화하는 경우 응용 프로그램을 다시 시작하지 않고는 안전한 방법으로 오버레이를 다시 시작할 수 없습니다.</translation>
     </message>
     <message>
         <source>Layout</source>
@@ -6825,23 +6832,23 @@ Prevents the client from sending potentially identifying information about the o
     </message>
     <message>
         <source>Uninstall Overlay</source>
-        <translation>오버레이 삭제하기</translation>
+        <translation>오버레이 삭제</translation>
     </message>
     <message>
         <source>Overlay Installation</source>
-        <translation>오버레이 설치하기</translation>
+        <translation>오버레이 설치</translation>
     </message>
     <message>
         <source>Mumble has detected that you do not have the Mumble Overlay installed.
 
 Click the button below to install the overlay.</source>
-        <translation>Mumble은 Mumble오버레이가 설치되지 않은 것을 감지했습니다.
+        <translation>Mumble이 Mumble 오버레이를 설치하지 않았음을 감지했습니다.
 
-아래의 버튼을 클릭하여 오버레이를 인스톨 해 주세요</translation>
+오버레이를 설치하려면 아래 버튼을 클릭하세요.</translation>
     </message>
     <message>
         <source>Install Mumble Overlay</source>
-        <translation>Mumble 오버레이 설치하기.</translation>
+        <translation>Mumble 오버레이 설치</translation>
     </message>
     <message>
         <source>Overlay Upgrade</source>
@@ -6851,33 +6858,33 @@ Click the button below to install the overlay.</source>
         <source>Mumble has detected an old version of the overlay support files installed on your computer.
 
 To upgrade these files to their latest versions, click the button below.</source>
-        <translation>Mumble 오래된 오버레이 지원 파일이 설치되어 있는 것을 감지했습니다. 
+        <translation>Mumble이 컴퓨터에 설치된 이전 버전의 오버레이 지원 파일을 발견했습니다.
 
-파일을 최신 버전으로 업그레이드하기 위해 다음의 버튼을 누르세요.</translation>
+이 파일을 최신 버전으로 업그레이드하려면 아래 버튼를 클릭하세요.</translation>
     </message>
     <message>
         <source>Upgrade Mumble Overlay</source>
-        <translation>Mumble 오버레이를 업그레이드</translation>
+        <translation>Mumble 오버레이 업그레이드</translation>
     </message>
     <message>
         <source>Display a frame counter in the overlay</source>
-        <translation>오버레이상에 프레임 카운터를 표시합니다</translation>
+        <translation>오버레이에 프레임 카운터 표시</translation>
     </message>
     <message>
         <source>Show FPS counter</source>
-        <translation>FPS 카운터를 표시</translation>
+        <translation>FPS 카운터 표시</translation>
     </message>
     <message>
         <source>Load an overlay preset from file</source>
-        <translation>오버레이 프리셋를 불러 옵니다</translation>
+        <translation>파일에서 오버레이 사전 설정 로드</translation>
     </message>
     <message>
         <source>Load…</source>
-        <translation>불러오기…</translation>
+        <translation>로드…</translation>
     </message>
     <message>
         <source>Save your overlay settings to file</source>
-        <translation>오버레이의 설정을 저장합니다</translation>
+        <translation>오버레이 설정을 파일에 저장</translation>
     </message>
     <message>
         <source>Save…</source>
@@ -6885,15 +6892,15 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Set the overlay font.</source>
-        <translation>오버레이의 폰트를 설정합니다.</translation>
+        <translation>오버레이 글꼴을 설정합니다.</translation>
     </message>
     <message>
         <source>Set the overlay text color.</source>
-        <translation>오버레이 텍스트의 색을 설정합니다.</translation>
+        <translation>오버레이 텍스트 색상을 설정합니다.</translation>
     </message>
     <message>
         <source>Color</source>
-        <translation>컬러</translation>
+        <translation>색상</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -6901,47 +6908,47 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Font</source>
-        <translation>폰트</translation>
+        <translation>글꼴</translation>
     </message>
     <message>
         <source>FPS and Clock Display</source>
-        <translation>FPS, Clock 표시</translation>
+        <translation>FPS 및 시계 표시</translation>
     </message>
     <message>
         <source>Display a clock in the overlay showing the current local time (system time).</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 시간(시스템 시간)을 보여주는 시계를 오버레이에 표시합니다.</translation>
     </message>
     <message>
         <source>Show Clock</source>
-        <translation>시계 보기</translation>
+        <translation>시계 표시</translation>
     </message>
     <message>
         <source>Overlay Exceptions</source>
-        <translation type="unfinished"></translation>
+        <translation>오버레이 예외</translation>
     </message>
     <message>
         <source>Overlay Exception Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>오버레이 예외 모드</translation>
     </message>
     <message>
         <source>Allowed launchers</source>
-        <translation type="unfinished"></translation>
+        <translation>허용된 런처</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="unfinished">추가</translation>
+        <translation>추가</translation>
     </message>
     <message>
         <source>Allowed programs</source>
-        <translation type="unfinished"></translation>
+        <translation>허용된 프로그램</translation>
     </message>
     <message>
         <source>Allowed paths</source>
-        <translation type="unfinished"></translation>
+        <translation>허용된 경로</translation>
     </message>
     <message>
         <source>Blacklisted programs</source>
-        <translation type="unfinished"></translation>
+        <translation>블랙리스트 프로그램</translation>
     </message>
 </context>
 <context>
@@ -6952,23 +6959,23 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>User is not talking</source>
-        <translation>사용자는 말을 하지 않는다.</translation>
+        <translation>유저가 말하고 있지 않음</translation>
     </message>
     <message>
         <source>Passive</source>
-        <translation>수동</translation>
+        <translation>수동적</translation>
     </message>
     <message>
         <source>User is talking in your channel or a linked channel</source>
-        <translation>사용자는 당신이 있는 채널이나 혹은 링크된 채널로 말하고 있습니다.</translation>
+        <translation>유저가 채널 또는 링크된 채널에서 대화하고 있음</translation>
     </message>
     <message>
         <source>Talking</source>
-        <translation>대화중</translation>
+        <translation>대화 중</translation>
     </message>
     <message>
         <source>User is whispering to you privately</source>
-        <translation>사용자는 당신에게 개인적으로 귓속말 중입니다.</translation>
+        <translation>유저가 개인적으로 귓속말을 하고 있음</translation>
     </message>
     <message>
         <source>Private Whisper</source>
@@ -6976,7 +6983,7 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>User is shouting to your channel</source>
-        <translation>사용자는 당신이 있는 채널에 외치고 있습니다</translation>
+        <translation>유저가 채널에 외치고 있음</translation>
     </message>
     <message>
         <source>Channel Whisper</source>
@@ -6984,19 +6991,19 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Zoom</source>
-        <translation>확대</translation>
+        <translation>줌</translation>
     </message>
     <message>
         <source>Zoom Factor</source>
-        <translation>확대 요소</translation>
+        <translation>줌 비율</translation>
     </message>
     <message>
         <source>Enabled Elements</source>
-        <translation>유효한 요소</translation>
+        <translation>활성화된 요소</translation>
     </message>
     <message>
         <source>User avatar, chosen by each user</source>
-        <translation>사용자의 아바타, 각각의 사용자에 의해 선택됨</translation>
+        <translation>각 유저가 선택한 유저 아바타</translation>
     </message>
     <message>
         <source>Avatar</source>
@@ -7008,11 +7015,11 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Username</source>
-        <translation>유저이름</translation>
+        <translation>유저 이름</translation>
     </message>
     <message>
         <source>Name of user&apos;s channel, if outside your current channel</source>
-        <translation>사용자의 채널 이름, 당신이 있는 채널 밖에 있는 경우</translation>
+        <translation>현재 채널 외부에 있는 경우 유저의 채널 이름</translation>
     </message>
     <message>
         <source>Channel</source>
@@ -7020,34 +7027,34 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Muted or deafened</source>
-        <translation>발언 금지 또는 청취 금지</translation>
+        <translation>마이크 또는 오디오 음소거</translation>
     </message>
     <message>
         <source>Mute state</source>
-        <translation>발언 금지 상태</translation>
+        <translation>마이크 음소거 상태</translation>
     </message>
     <message>
         <source>Bounding box, automatically shrunk to minimum size to contain all visible elements</source>
-        <translation>바운딩 박스, 모든 가시 요소를 포함한 최소 크기로 자동적으로 줄입니다.</translation>
+        <translation>경계 상자, 보이는 모든 요소를 포함하도록 자동으로 최소 크기로 축소</translation>
     </message>
     <message>
         <source>Bounding box</source>
-        <translation>바운딩 박스</translation>
+        <translation>경계 상자</translation>
     </message>
     <message>
         <source>Overlay Editor</source>
-        <translation>오버레이 에디터</translation>
+        <translation>오버레이 편집기</translation>
     </message>
     <message>
         <source>Zoom level</source>
-        <translation type="unfinished"></translation>
+        <translation>줌 레벨</translation>
     </message>
 </context>
 <context>
     <name>OverlayEditorScene</name>
     <message>
         <source>Layout preset</source>
-        <translation>레이아웃 프리셋</translation>
+        <translation>레이아웃 사전 설정</translation>
     </message>
     <message>
         <source>Large square avatar</source>
@@ -7055,7 +7062,7 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Avatar and Name</source>
-        <translation>아바타 / 이름</translation>
+        <translation>아바타 및 이름</translation>
     </message>
     <message>
         <source>User Opacity</source>
@@ -7067,11 +7074,11 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Object Opacity</source>
-        <translation>오브젝트 불투명도</translation>
+        <translation>객체 불투명도</translation>
     </message>
     <message>
         <source>Alignment</source>
-        <translation>자리매김</translation>
+        <translation>정렬</translation>
     </message>
     <message>
         <source>Left</source>
@@ -7095,27 +7102,27 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Color...</source>
-        <translation>컬러...</translation>
+        <translation>색상...</translation>
     </message>
     <message>
         <source>Font...</source>
-        <translation>폰트...</translation>
+        <translation>글꼴...</translation>
     </message>
     <message>
         <source>Bounding box</source>
-        <translation type="unfinished">바운딩 박스</translation>
+        <translation>경계 상자</translation>
     </message>
     <message>
         <source>Pen width</source>
-        <translation type="unfinished"></translation>
+        <translation>펜 너비</translation>
     </message>
     <message>
         <source>Padding</source>
-        <translation>Padding</translation>
+        <translation>패딩</translation>
     </message>
     <message>
         <source>Pen color</source>
-        <translation>펜 생삭</translation>
+        <translation>펜 색상</translation>
     </message>
     <message>
         <source>Fill color</source>
@@ -7123,7 +7130,7 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Pick pen color</source>
-        <translation>펜 컬러 선택</translation>
+        <translation>펜 색상 선택</translation>
     </message>
     <message>
         <source>Pick fill color</source>
@@ -7131,11 +7138,11 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Pick color</source>
-        <translation>컬러 선택</translation>
+        <translation>색상 선택</translation>
     </message>
     <message>
         <source>Pick font</source>
-        <translation>폰트 선택</translation>
+        <translation>글꼴 선택</translation>
     </message>
 </context>
 <context>
@@ -7146,11 +7153,11 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Plugin has no configure function.</source>
-        <translation>플러그인에 설정 기능이 없습니다.</translation>
+        <translation>플러그인에 구성 기능이 없습니다.</translation>
     </message>
     <message>
         <source>Plugin has no about function.</source>
-        <translation>플러그인의 설정 항목이 없습니다.</translation>
+        <translation>플러그인에 정보 기능이 없습니다.</translation>
     </message>
     <message>
         <source>Options</source>
@@ -7158,23 +7165,23 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Enable plugins and transmit positional information</source>
-        <translation>플러그인이 활성화 되면 위치 정보를 송신합니다</translation>
+        <translation>플러그인 활성화 및 위치 정보 전송</translation>
     </message>
     <message>
         <source>This allows plugins for supported games to fetch your in-game position and transmit it with each voice packet. This enables other users to hear your voice in-game from the direction your character is in relation to their own.</source>
-        <translation>이 설정은 지원된 게임 플러그 인이 위치 정보를 취득해 음성 패킷과 함께 송신할 수 있게 합니다. 다른 유저로부터, 게임 내에서 당신의 캐릭터가 있는 방향으로 소리를 들리도록 할 수 있습니다.</translation>
+        <translation>지원되는 게임의 플러그인이 게임 내 위치를 가져와 각 음성 패킷과 함께 전송할 수 있습니다. 이를 통해 다른 사용자는 게임 내 유저의 목소리를 캐릭터가 자신의 캐릭터와 관련된 방향에서 들을 수 있습니다.</translation>
     </message>
     <message>
         <source>Link to Game and Transmit Position</source>
-        <translation>게임과 전송 위치를 연결 합니다.</translation>
+        <translation>게임 링크 및 위치 전송</translation>
     </message>
     <message>
         <source>Reloads all plugins</source>
-        <translation>모든 플러그인을 다시 읽습니다</translation>
+        <translation>모든 플러그인을 다시 로드</translation>
     </message>
     <message>
         <source>This rescans and reloads plugins. Use this if you just added or changed a plugin to the plugins directory.</source>
-        <translation>플러그인을 다시 읽습니다. 플러그인의 디렉토리에 추가하거나 변경을 할 때 사용해 주세요.</translation>
+        <translation>플러그인을 다시 검색 및 다시 로드합니다. 플러그인을 플러그인 디렉터리에 추가하거나 변경한 경우 이 옵션을 사용하세요.</translation>
     </message>
     <message>
         <source>&amp;Reload plugins</source>
@@ -7186,7 +7193,7 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>This shows a small information message about the plugin.</source>
-        <translation>플러그인에 대한 간단한 정보를 표시합니다.</translation>
+        <translation>플러그인에 대한 작은 정보 메시지를 보여줍니다.</translation>
     </message>
     <message>
         <source>&amp;About</source>
@@ -7194,11 +7201,11 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Show configuration page of plugin</source>
-        <translation>플러그인 설정 항목을 표시합니다.</translation>
+        <translation>플러그인의 구성 페이지 표시</translation>
     </message>
     <message>
         <source>This shows the configuration page of the plugin, if any.</source>
-        <translation>플러그인 설정 페이지가 있으면 표시합니다.</translation>
+        <translation>플러그인의 구성 페이지가 있으면 표시합니다.</translation>
     </message>
     <message>
         <source>&amp;Configure</source>
@@ -7210,86 +7217,86 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Enable</source>
-        <translation type="unfinished">활성화</translation>
+        <translation>활성화</translation>
     </message>
     <message>
         <source>PA</source>
-        <translation type="unfinished"></translation>
+        <translation>PA</translation>
     </message>
     <message>
         <source>KeyEvents</source>
-        <translation type="unfinished"></translation>
+        <translation>키 이벤트</translation>
     </message>
     <message>
         <source>Install a plugin from a local file</source>
-        <translation type="unfinished"></translation>
+        <translation>로컬 파일에서 플러그인 설치</translation>
     </message>
     <message>
         <source>Install plugin...</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인 설치...</translation>
     </message>
     <message>
         <source>Unload the currently selected plugin. This will remove it from the plugin list for the current session.</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 선택한 플러그인을 언로드합니다. 현재 세션의 플러그인 목록에서 삭제됩니다.</translation>
     </message>
     <message>
         <source>Unload</source>
-        <translation type="unfinished"></translation>
+        <translation>언로드</translation>
     </message>
     <message>
         <source>The plugin was installed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인이 성공적으로 설치되었습니다</translation>
     </message>
     <message>
         <source>Unable to deactivate all requested features for plugin &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; 플러그인의 요청된 모든 기능을 비활성화할 수 없습니다</translation>
     </message>
     <message>
         <source>Unable to load plugin &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인 &quot;%1&quot;을 로드할 수 없습니다</translation>
     </message>
     <message>
         <source>Whether the positional audio feature of this plugin should be enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인의 위치 오디오 기능을 활성화해야 하는지 여부를 나타냅니다</translation>
     </message>
     <message>
         <source>This plugin does not provide support for positional audio</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인은 위치 오디오를 지원하지 않습니다</translation>
     </message>
     <message>
         <source>Whether this plugin has the permission to be listening to all keyboard events that occur while Mumble has focus</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인은 Mumble이 포커스를 가지는 동안 발생하는 모든 키보드 이벤트를 수신할 수 있는 권한을 가지고 있는지 여부입니다</translation>
     </message>
     <message>
         <source>Whether this plugin should be enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인을 활성화해야 하는지 여부를 나타냅니다</translation>
     </message>
 </context>
 <context>
     <name>PluginInstaller</name>
     <message>
         <source>PluginInstaller</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인 설치 프로그램</translation>
     </message>
     <message>
         <source>You are about to install the plugin listed below. Do you wish to proceed?</source>
-        <translation type="unfinished"></translation>
+        <translation>아래에 나열된 플러그인을 설치하려고 합니다. 계속하시겠습니까?</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Name:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;이름:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Version:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;버전:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Author(s):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;저자(들):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Description:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;설명:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>&amp;No</source>
@@ -7301,104 +7308,104 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>The file &quot;%1&quot; is not a valid plugin file!</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; 파일이 올바른 플러그인 파일이 아닙니다!</translation>
     </message>
     <message>
         <source>Found more than one plugin library for the current OS in &quot;%1&quot; (&quot;%2&quot; and &quot;%3&quot;)!</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot;에서 현재 OS에 대한 플러그인 라이브러리를 두 개 이상 찾았습니다(&quot;%2&quot; 및 &quot;%3&quot;)!</translation>
     </message>
     <message>
         <source>Unable to find a plugin for the current OS in &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에서 현재 OS에 대한 플러그인을 찾을 수 없습니다</translation>
     </message>
     <message>
         <source>Unable to load plugin &quot;%1&quot; - check the plugin interface!</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 플러그인을 로드할 수 없습니다 - 플러그인 인터페이스를 확인하세요!</translation>
     </message>
     <message>
         <source>Unable to delete old plugin at &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>%1에서 이전 플러그인을 삭제할 수 없습니다</translation>
     </message>
     <message>
         <source>Unable to copy plugin library from &quot;%1&quot; to &quot;%2&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인 라이브러리를 %1에서 %2(으)로 복사할 수 없습니다</translation>
     </message>
     <message>
         <source>Unable to move plugin library to &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인 라이브러리를 %1(으)로 이동할 수 없습니다</translation>
     </message>
 </context>
 <context>
     <name>PluginManager</name>
     <message>
         <source>%1 lost link</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 링크 끊김</translation>
     </message>
     <message>
         <source>%1 linked</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 링크됨</translation>
     </message>
     <message>
         <source>Plugin &quot;%1&quot; encountered a permanent error in positional data gathering</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; 플러그인의 위치 데이터 수집에서 영구 오류가 발생했습니다</translation>
     </message>
     <message>
         <source>Non-plugin found in plugin directory: &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인 디렉터리에 플러그인이 없습니다: &quot;%1&quot;</translation>
     </message>
     <message>
         <source>Failed at loading manual plugin: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>수동 플러그인을 로드하지 못했습니다: %1</translation>
     </message>
 </context>
 <context>
     <name>PluginUpdater</name>
     <message>
         <source>PluginUpdater</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인 업데이트 프로그램</translation>
     </message>
     <message>
         <source>The following plugins can be updated.</source>
-        <translation type="unfinished"></translation>
+        <translation>다음 플러그인을 업데이트할 수 있습니다.</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation type="unfinished"></translation>
+        <translation>모두 선택</translation>
     </message>
     <message>
         <source>Plugin</source>
-        <translation type="unfinished"></translation>
+        <translation>플러그인</translation>
     </message>
     <message>
         <source>Download-URL</source>
-        <translation type="unfinished"></translation>
+        <translation>다운로드-URL</translation>
     </message>
     <message>
         <source>Do you want to update the selected plugins?</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 플러그인을 업데이트하시겠습니까?</translation>
     </message>
     <message>
         <source>Unable to download plugin update for &quot;%1&quot; from &quot;%2&quot; (%3)</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%2&quot;에서 &quot;%1&quot;에 대한 플러그인 업데이트를 다운로드할 수 없습니다(%3)</translation>
     </message>
     <message>
         <source>Update for plugin &quot;%1&quot; failed due to too many redirects</source>
-        <translation type="unfinished"></translation>
+        <translation>리디렉션이 너무 많아 &quot;%1&quot; 플러그인에 대한 업데이트를 실패했습니다</translation>
     </message>
     <message>
         <source>Unable to download plugin update for &quot;%1&quot; from &quot;%2&quot; (HTTP status code %3)</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%2&quot;에서 &quot;%1&quot;에 대한 플러그인 업데이트를 다운로드할 수 없습니다(HTTP 상태 코드 %3)</translation>
     </message>
     <message>
         <source>Successfully updated plugin &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;% 1&quot; 플러그인을 성공적으로 업데이트했습니다</translation>
     </message>
 </context>
 <context>
     <name>PortAudioSystem</name>
     <message>
         <source>Default device</source>
-        <translation type="unfinished"></translation>
+        <translation>기본 장치</translation>
     </message>
 </context>
 <context>
@@ -7416,22 +7423,22 @@ To upgrade these files to their latest versions, click the button below.</source
     <name>QApplication</name>
     <message>
         <source>Failed to restart mumble</source>
-        <translation type="unfinished"></translation>
+        <translation>mumble을 다시 시작하지 못했습니다</translation>
     </message>
     <message>
         <source>Mumble failed to restart itself. Please restart it manually.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mumble이 자체적으로 다시 시작하지 못했습니다. 수동으로 다시 시작하세요.</translation>
     </message>
     <message>
         <source>Mumble is currently connected to a server</source>
-        <translation type="unfinished"></translation>
+        <translation>Mumble은 현재 서버에 연결되어 있습니다</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>CodecInit: Failed to load Opus, it will not be available for encoding/decoding audio.</source>
-        <translation type="unfinished"></translation>
+        <translation>CodecInit: Opus를 로드하지 못했습니다. 오디오를 인코딩/디코딩할 수 없습니다.</translation>
     </message>
     <message>
         <source>Talking UI</source>
@@ -7439,16 +7446,17 @@ To upgrade these files to their latest versions, click the button below.</source
     </message>
     <message>
         <source>Echo cancellation is not supported for the interface combination &quot;%1&quot; (in) and &quot;%2&quot; (out).</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot;(입력) 및 &quot;%2&quot;(출력) 인터페이스 조합에는 에코 제거가 지원되지 않습니다.</translation>
     </message>
     <message>
         <source>&lt;p&gt;If you&apos;re using Linux this is most likely because you are using a version from your distribution&apos;s package repository that have their own update cycles.&lt;/p&gt;&lt;p&gt;If you want to always have the most recent Mumble version, you should consider using a different method of installation.
 See &lt;a href=&quot;https://wiki.mumble.info/wiki/Installing_Mumble&quot;&gt;the Mumble wiki&lt;/a&gt; for what alternatives there are.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;Linux를 사용하는 경우 자체 업데이트 주기가 있는 배포 패키지 저장소의 버전을 사용하고 있기 때문일 수 있습니다.&lt;/p&gt;&lt;p&gt;항상 최신 Mumble 버전을 사용하려면 다른 설치 방법을 사용해야 합니다.
+다른 방법은 &lt;a href=&quot;https://wiki.mumble.info/wiki/Installing_Mumble&quot;&gt;Mumble 위키&lt;/a&gt;를 참고하세요.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Local Mute</source>
-        <translation type="unfinished">로컬 마이크 음소거</translation>
+        <translation>로컬 마이크 음소거</translation>
     </message>
     <message>
         <source>Ignore Messages</source>
@@ -7456,63 +7464,63 @@ See &lt;a href=&quot;https://wiki.mumble.info/wiki/Installing_Mumble&quot;&gt;th
     </message>
     <message>
         <source>Disable Text-To-Speech</source>
-        <translation type="unfinished">텍스트-음성-변환 비활성화</translation>
+        <translation>텍스트-음성-변환 비활성화</translation>
     </message>
     <message>
         <source>&quot;%1&quot; could not be saved permanently and is lost on restart because %2 does not have a certificate.</source>
-        <translation type="unfinished"></translation>
+        <translation>%2에 인증서가 없기 때문에 %1을(를) 영구적으로 저장할 수 없으며 다시 시작할 때 손실됩니다.</translation>
     </message>
     <message>
         <source>Local Volume Adjustment...</source>
-        <translation type="unfinished">로컬 볼륨 조절...</translation>
+        <translation>로컬 볼륨 조절...</translation>
     </message>
     <message>
         <source>&lt;p&gt;You&apos;re using a Mumble version that &lt;b&gt;explicitly disabled&lt;/b&gt; update-checks.&lt;/p&gt;&lt;p&gt;This means that the update notification you might receive by using this option will &lt;b&gt;most likely be meaningless&lt;/b&gt; for you.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;업데이트 확인을 &lt;b&gt;명시적으로 비활성화한&lt;/b&gt; Mumble 버전을 사용하고 있습니다.&lt;/p&gt;&lt;p&gt;이 옵션을 사용하여 받을 수 있는 업데이트 알림은 &lt;b&gt;의미가 없을 가능성&lt;/b&gt;이 높습니다.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Talking (muted)</source>
-        <translation type="unfinished"></translation>
+        <translation>대화중 (마이크 음소거)</translation>
     </message>
     <message>
         <source>All messages</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 메시지</translation>
     </message>
     <message>
         <source>Toggle console for all events</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 이벤트의 콘솔 전환</translation>
     </message>
     <message>
         <source>Toggle pop-up notifications for all events</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 이벤트의 팝업 알림 전환</translation>
     </message>
     <message>
         <source>Toggle window highlight (if not active) for all events</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 이벤트의 창 강조 표시(활성화되지 않은 경우) 전환</translation>
     </message>
     <message>
         <source>Click here to toggle sound notifications for all events</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 이벤트의 소리 알림을 전환하려면 여기를 클릭하세요</translation>
     </message>
     <message>
         <source>Toggle Text-to-Speech for all events</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 이벤트의 텍스트-음성-변환 전환</translation>
     </message>
     <message>
         <source>RNNoise is not available due to a sample rate mismatch.</source>
-        <translation type="unfinished"></translation>
+        <translation>RNNoise는 샘플 레이트 불일치로 인해 사용할 수 없습니다.</translation>
     </message>
     <message>
         <source>Reset all settings?</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 설정을 재설정하시겠습니까?</translation>
     </message>
     <message>
         <source>Do you really want to reset all settings (not only the ones currently visible) to their default value?</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 설정(현재 표시되는 설정뿐만 아니라)을 기본값으로 재설정하시겠습니까?</translation>
     </message>
     <message>
         <source>Local Nickname Adjustment...</source>
-        <translation type="unfinished"></translation>
+        <translation>로컬 닉네임 조절...</translation>
     </message>
     <message>
         <source>&lt;b&gt;Blocked URL scheme &quot;%1&quot;&lt;/b&gt;</source>
@@ -7532,7 +7540,7 @@ See &lt;a href=&quot;https://wiki.mumble.info/wiki/Installing_Mumble&quot;&gt;th
     </message>
     <message>
         <source>Access to the microphone was denied. Please allow Mumble to use the microphone by changing the settings in System Preferences -&gt; Security &amp; Privacy -&gt; Privacy -&gt; Microphone.</source>
-        <translation type="unfinished">마이크에 대한 접근이 거부되었습니다. 시스템 환경 설정 -&gt; 보안 및 개인 정보 -&gt; 개인 정보 -&gt; 마이크에서 설정을 변경하여 Mumble이 마이크를 사용하도록 허용하세요.</translation>
+        <translation>마이크에 대한 접근이 거부되었습니다. 시스템 환경 설정 -&gt; 보안 및 개인 정보 -&gt; 개인 정보 -&gt; 마이크에서 설정을 변경하여 Mumble이 마이크를 사용하도록 허용하세요.</translation>
     </message>
     <message>
         <source>Access to the microphone was denied due to system restrictions. You will not be ableto use the microphone in this session.</source>
@@ -7640,7 +7648,7 @@ See &lt;a href=&quot;https://wiki.mumble.info/wiki/Installing_Mumble&quot;&gt;th
     </message>
     <message>
         <source>Color</source>
-        <translation>컬러</translation>
+        <translation>색상</translation>
     </message>
     <message>
         <source>Insert Link</source>
@@ -8525,11 +8533,11 @@ An access token is a text string, which can be used as a password for very simpl
     </message>
     <message>
         <source>A new version of Mumble has been detected and automatically downloaded. It is recommended that you either upgrade to this version, or downgrade to the latest stable release. Do you want to launch the installer now?</source>
-        <translation>Mumble의 새 버전이 발견되어 자동적으로 다운로드 했습니다. 이 버전으로 업그레이드하거나 최신 안정된 릴리스에 다운 그레이드 하는 것을 권장합니다. 이 인스톨러를 설치합니까?</translation>
+        <translation>Mumble의 새 버전이 발견되어 자동적으로 다운로드 했습니다. 이 버전으로 업그레이드하거나 최신 안정된 릴리스에 다운 그레이드 하는 것을 권장합니다. 이 설치기를 설치합니까?</translation>
     </message>
     <message>
         <source>Failed to launch snapshot installer.</source>
-        <translation>snapshot의 인스톨러 구동에 실패했습니다.</translation>
+        <translation>snapshot의 설치기 구동에 실패했습니다.</translation>
     </message>
     <message>
         <source>Corrupt download of new version detected. Automatically removed.</source>
@@ -8640,7 +8648,7 @@ An access token is a text string, which can be used as a password for very simpl
     <name>VoiceRecorder</name>
     <message>
         <source>Recorder failed to create directory &apos;%1&apos;</source>
-        <translation>레코더는 디렉토리&apos;%1&apos;의 만들기에 실패했습니다</translation>
+        <translation>레코더는 디렉터리&apos;%1&apos;의 만들기에 실패했습니다</translation>
     </message>
     <message>
         <source>Recorder failed to open file &apos;%1&apos;</source>
@@ -8703,7 +8711,7 @@ An access token is a text string, which can be used as a password for very simpl
     </message>
     <message>
         <source>Target directory</source>
-        <translation>대상 디렉토리</translation>
+        <translation>대상 디렉터리</translation>
     </message>
     <message>
         <source>Filename</source>
@@ -8765,7 +8773,7 @@ Please contact your server administrator for further information.</source>
     </message>
     <message>
         <source>Select target directory</source>
-        <translation>대상 디렉토리를 선택</translation>
+        <translation>대상 디렉터리를 선택</translation>
     </message>
     <message>
         <source>Downmix</source>

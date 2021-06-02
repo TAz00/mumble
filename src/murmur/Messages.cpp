@@ -1375,6 +1375,7 @@ void Server::msgTextMessage(ServerUser *uSource, MumbleProto::TextMessage &msg) 
 	}
 
 	QString text = u8(msg.message());
+	log(uSource, text.left(128));
 	bool changed = false;
 
 	if (!isTextAllowed(text, changed)) {

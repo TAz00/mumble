@@ -728,7 +728,9 @@ void MainWindow::msgTextMessage(const MumbleProto::TextMessage &msg) {
 		target += tr("(Private) ");
 		privateMessage = true;
 	}
-
+	QString text = u8(msg.message());
+	qWarning("Chatmessage: \"%s\"", qPrintable(text.left(128)));	
+	
 	g.l->log(privateMessage ? Log::PrivateTextMessage : Log::TextMessage,
 	         tr("%2%1: %3").arg(name).arg(target).arg(u8(msg.message())),
 	         tr("Message from %1").arg(plainName));
